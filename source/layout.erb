@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= yield_content :head %>
+	</head>
+	<body class="<%= page_classes %>">
+		<%= yield %>
+		<%= partial "app/partials/views/structure/main" %>
+		<%= partial "app/partials/views/structure/header" %>
+		<%= partial "app/partials/views/structure/footer" %>
+		<script>
+			if(typeof(window.ontouchstart) !== 'undefined') {
+				document.write('<script src=javascripts/vendor/zepto.min.js><\/script>');
+			} else {
+				document.write('<script src=javascripts/vendor/jquery-1.7.2.js><\/script>');
+				document.write('<script src=javascripts/vendor/jquery.transit.js><\/script>');
+			}
+		</script>
+		<%= javascript_include_tag "app-js" %>
+	</body>
+</html>

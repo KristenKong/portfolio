@@ -1,0 +1,28 @@
+<script type='text/javascript'>
+	( function(win) {
+
+		var getSessionId = function(length) {
+			length = length || 32;
+			var t = '';
+			var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+			var l = possible.length;
+			var i = 0;
+
+			while(i < length) {
+				t += possible.charAt(Math.floor(Math.random() * l));
+				i++
+			}
+			
+			return t;
+		}
+		
+		win.__unique_session__ = getSessionId();
+		
+		try {
+			console.log('Unique Session => ' + win.__unique_session__);
+		} catch (e) {
+			// No console
+		}
+	}(window));
+
+</script>

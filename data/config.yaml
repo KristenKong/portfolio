@@ -1,0 +1,65 @@
+defaults:
+  port: "8888"
+  branch: "master"
+  heroku: "ops"
+
+apps:
+  development: "dev-project-boilerplate"
+  review: "review-project-boilerplate"
+  staging: "staging-project-boilerplate"
+  production: "project-boilerplate"
+  
+collaborators:
+  - "ray.patterson@akqa.com"
+  
+site:
+  title: "Site title."
+  name: "Site name."
+  description: "Site description."
+  protocol: "http"
+  
+environments:
+  local:
+    auth:
+      username: "admin"
+      password: "admin"
+    urls:
+      desktop: "localhost:8888"
+      tablet: "localhost:8888"
+      mobile: "localhost:9999"
+  
+  development:
+    branch: "develop"
+    urls:
+      desktop: "dev-project-boilerplate.herokuapp.com"
+      tablet: "dev-project-boilerplate.herokuapp.com"
+      mobile: "m-dev-project-boilerplate.herokuapp.com"
+  
+  review:
+    branch: "develop"
+    auth:
+      username: "admin"
+      password: "admin"
+    urls:
+      desktop: "review-project-boilerplate.herokuapp.com"
+      tablet: "review-project-boilerplate.herokuapp.com"
+      mobile: "m-review-project-boilerplate.herokuapp.com"
+  
+  staging:
+    branch: "develop"
+    auth:
+      username: "admin"
+      password: "admin"
+    urls:
+      ignore: "origin.staging.project-boilerplate.com"
+      desktop: "staging.project-boilerplate.com"
+      tablet: "staging.project-boilerplate.com"
+      mobile: "m.staging.project-boilerplate.com"
+  
+  production:
+    branch: "master"
+    urls:
+      ignore: "origin.project-boilerplate.com"
+      desktop: "project-boilerplate.com"
+      tablet: "project-boilerplate.com"
+      mobile: "m.project-boilerplate.com"

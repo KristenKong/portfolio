@@ -1,0 +1,466 @@
+{
+	"build_version": 0,
+	"root_item": {
+		"item": {
+			"fragment": "badges",
+			"title": "Badges",
+			"description": "I am Badges.",
+			"items": [
+				{
+					"item": {
+						"fragment": "r8",
+						"title": "R8",
+						"description": "I am R.",
+						"duration": 15,
+						"items": [
+						  {
+								"item": {
+									"fragment": "top",
+									"title": "R8 Top",
+									"description": "I am R8 Top.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "R8 Top Intro",
+												"description": "I am R8 Top Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							},
+							{
+								"item": {
+									"fragment": "power",
+									"title": "R Power",
+									"description": "I am R Power.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "R Power Intro",
+												"description": "I am R Power Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "R Power Technology A",
+												"description": "I am R Power Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "R Power Technology B",
+												"description": "I am R Power Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "R Power Technology C",
+												"description": "I am R Power Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "control",
+									"title": "R Control",
+									"description": "I am R Control.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "R Control Intro",
+												"description": "I am R Control Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "R Control Technology A",
+												"description": "I am R Control Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "R Control Technology B",
+												"description": "I am R Control Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "R Control Technology C",
+												"description": "I am R Control Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "design",
+									"title": "R Design",
+									"description": "I am R Design.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "R Design Intro",
+												"description": "I am R Design Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "R Design Technology A",
+												"description": "I am R Design Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "R Design Technology B",
+												"description": "I am R Design Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "R Design Technology C",
+												"description": "I am R Design Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}, {
+					"item": {
+						"fragment": "rs",
+						"title": "RS",
+						"description": "I am RS.",
+						"duration": 15,
+						"items": [
+						  {
+								"item": {
+									"fragment": "top",
+									"title": "RS Top",
+									"description": "I am RS Top.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "RS Top Intro",
+												"description": "I am RS Top Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							},
+							{
+								"item": {
+									"fragment": "power",
+									"title": "RS Power",
+									"description": "I am RS Power.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "RS Power Intro",
+												"description": "I am RS Power Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "RS Power Technology A",
+												"description": "I am RS Power Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "RS Power Technology B",
+												"description": "I am RS Power Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "RS Power Technology C",
+												"description": "I am RS Power Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "control",
+									"title": "RS Control",
+									"description": "I am RS Control.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "RS Control Intro",
+												"description": "I am RS Control Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "RS Control Technology A",
+												"description": "I am RS Control Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "RS Control Technology B",
+												"description": "I am RS Control Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "RS Control Technology C",
+												"description": "I am RS Control Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "design",
+									"title": "RS Design",
+									"description": "I am RS Design.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "RS Design Intro",
+												"description": "I am R Design Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "RS Design Technology A",
+												"description": "I am R Design Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "RS Design Technology B",
+												"description": "I am R Design Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "RS Design Technology C",
+												"description": "I am R Design Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}, {
+					"item": {
+						"fragment": "s",
+						"title": "S",
+						"description": "I am S.",
+						"duration": 15,
+						"items": [
+						  {
+								"item": {
+									"fragment": "top",
+									"title": "S Top",
+									"description": "I am S Top.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "S Top Intro",
+												"description": "I am S Top Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							},
+							{
+								"item": {
+									"fragment": "power",
+									"title": "S Power",
+									"description": "I am S Power.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "S Power Intro",
+												"description": "I am S Power Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "S Power Technology A",
+												"description": "I am S Power Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "S Power Technology B",
+												"description": "I am S Power Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "S Power Technology C",
+												"description": "I am S Power Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "control",
+									"title": "S Control",
+									"description": "I am S Control.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "S Control Intro",
+												"description": "I am S Control Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "S Control Technology A",
+												"description": "I am S Control Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "S Control Technology B",
+												"description": "I am S Control Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "S Control Technology C",
+												"description": "I am S Control Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}, {
+								"item": {
+									"fragment": "design",
+									"title": "S Design",
+									"description": "I am S Design.",
+									"items": [
+										{
+											"item": {
+												"fragment": "intro",
+												"title": "S Design Intro",
+												"description": "I am S Design Intro.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_a",
+												"title": "S Design Technology A",
+												"description": "I am S Design Technology A.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_b",
+												"title": "S Design Technology B",
+												"description": "I am S Design Technology B.",
+												"template" : "text",
+												"items": null
+											}
+										}, {
+											"item": {
+												"fragment": "technology_c",
+												"title": "S Design Technology C",
+												"description": "I am S Design Technology C.",
+												"template" : "text",
+												"items": null
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

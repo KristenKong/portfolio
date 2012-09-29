@@ -1,0 +1,10 @@
+<script type='text/javascript'>
+	(function(win){
+		win.__build_version__ = "<%= build_version %>";
+		try {
+			console.log('Build Version => ' + win.__build_version__);
+		} catch (e) {
+			// No console
+		}
+	}(window));
+</script>

@@ -1,0 +1,29 @@
+input{
+	line-height: 40px;
+	padding: 0;
+	text-indent:10px;
+}
+
+#submit{
+	text-indent: 0;
+}
+
+#input-submit{
+	outline: none;
+}
+
+.ie-placeholder{
+	color:#000;
+	display:block;
+	font-family:'AudiTypeExtendedNormal', sans-serif;
+	font-size:12px;
+	position: absolute;
+	top:15px; left:15px;
+}
+
+.ie-error{
+	color:#900;
+	font-family:'AudiTypeExtendedNormal', sans-serif;
+	font-size:12px;
+	font-style:normal;
+}

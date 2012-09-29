@@ -1,0 +1,10 @@
+<script type='text/javascript'>
+	(function(win){
+		win.__debug_flag__ = "<%= debug_flag %>";
+		try {
+			console.log('Debug Flag => ' + win.__debug_flag__);
+		} catch (e) {
+			// No console
+		}
+	}(window));
+</script>
