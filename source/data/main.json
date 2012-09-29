@@ -8,9 +8,9 @@
 				"items": [
 					{
 						"item": {
-							"fragment": "1",
-							"title": "1 Title",
-							"description": "1 decription.",
+							"fragment": "work",
+							"title": "Work",
+							"description": "Here are some of my most recent projects.",
 							"items": [
 								{
 									"item": {
@@ -29,9 +29,51 @@
 						}
 					}, {
 						"item": {
-							"fragment": "2",
-							"title": "2 Title",
-							"description": "2 description.",
+							"fragment": "blogs",
+							"title": "Blogs",
+							"description": "These are some of the blogs I've created.",
+							"items": [
+								{
+									"item": {
+										"fragment": "2-1",
+										"title": "2.1 Title",
+										"description": "2.1 description."
+									}
+								}, {
+									"item": {
+										"fragment": "2-2",
+										"title": "2.2 Title",
+										"description": "2.2 description."
+									}
+								}
+							]
+						}
+					}, {
+						"item": {
+							"fragment": "about",
+							"title": "About",
+							"description": "Find out a bit more.",
+							"items": [
+								{
+									"item": {
+										"fragment": "2-1",
+										"title": "2.1 Title",
+										"description": "2.1 description."
+									}
+								}, {
+									"item": {
+										"fragment": "2-2",
+										"title": "2.2 Title",
+										"description": "2.2 description."
+									}
+								}
+							]
+						}
+					}, {
+						"item": {
+							"fragment": "contact",
+							"title": "Contact",
+							"description": "I can be reached at:",
 							"items": [
 								{
 									"item": {

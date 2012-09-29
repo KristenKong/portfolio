@@ -12,13 +12,11 @@ class _VIEWS.BaseView extends Backbone.View
   EVENTBUS : undefined
     
   initialize : ->
-    # @className = if @el then "#{@className} #{@el.nodeName} ##{@el.id}" or "#{@className} #{@el.nodeName} .#{el.className}" else @className
     @className = if @el then "#{@className} ##{@el.id}" or "#{@className} .#{el.className}" else @className
     @log = _NS.log @className
     @ROUTER = _NS.navigationRouter
     @EVENTBUS = _NS.eventBus
     @touchOS = _NS.Config.touchOS
-    @moveY = _HELPERS.transition.moveY
     _NS.eventBus.bind _NS.eventBus.eventTypes.WINDOW_RESIZE, (w, h) => @resize w, h
   
   resize: (w, h) ->

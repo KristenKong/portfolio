@@ -4,18 +4,18 @@ defaults:
   heroku: "ops"
 
 apps:
-  development: "dev-project-boilerplate"
-  review: "review-project-boilerplate"
-  staging: "staging-project-boilerplate"
-  production: "project-boilerplate"
+  development: "dev-kristenkong"
+  review: "review-kristenkong"
+  staging: "staging-kristenkong"
+  production: "kristenkong"
   
 collaborators:
   - "ray.patterson@akqa.com"
   
 site:
-  title: "Site title."
-  name: "Site name."
-  description: "Site description."
+  title: "Kristen M. Kong | Art Director"
+  name: "Kristen M. Kong | Art Director"
+  description: "The portfolio of Kristen M. Kong, Art Director."
   protocol: "http"
   
 environments:
@@ -31,9 +31,9 @@ environments:
   development:
     branch: "develop"
     urls:
-      desktop: "dev-project-boilerplate.herokuapp.com"
-      tablet: "dev-project-boilerplate.herokuapp.com"
-      mobile: "m-dev-project-boilerplate.herokuapp.com"
+      desktop: "dev-kristenkong.herokuapp.com"
+      tablet: "dev-kristenkong.herokuapp.com"
+      mobile: "m-dev-kristenkong.herokuapp.com"
   
   review:
     branch: "develop"
@@ -41,9 +41,9 @@ environments:
       username: "admin"
       password: "admin"
     urls:
-      desktop: "review-project-boilerplate.herokuapp.com"
-      tablet: "review-project-boilerplate.herokuapp.com"
-      mobile: "m-review-project-boilerplate.herokuapp.com"
+      desktop: "review-kristenkong.herokuapp.com"
+      tablet: "review-kristenkong.herokuapp.com"
+      mobile: "m-review-kristenkong.herokuapp.com"
   
   staging:
     branch: "develop"
@@ -51,15 +51,15 @@ environments:
       username: "admin"
       password: "admin"
     urls:
-      ignore: "origin.staging.project-boilerplate.com"
-      desktop: "staging.project-boilerplate.com"
-      tablet: "staging.project-boilerplate.com"
-      mobile: "m.staging.project-boilerplate.com"
+      ignore: "origin.staging.kristenkong.com"
+      desktop: "staging.kristenkong.com"
+      tablet: "staging.kristenkong.com"
+      mobile: "m.staging.kristenkong.com"
   
   production:
     branch: "master"
     urls:
-      ignore: "origin.project-boilerplate.com"
-      desktop: "project-boilerplate.com"
-      tablet: "project-boilerplate.com"
-      mobile: "m.project-boilerplate.com"
+      ignore: "origin.kristenkong.com"
+      desktop: "kristenkong.com"
+      tablet: "kristenkong.com"
+      mobile: "m.kristenkong.com"
