@@ -13,6 +13,11 @@ _checkPlaylistCollection = ->
     @collection.trigger eventType, @
     
   @
+  
+_checkVideo = ->
+  if ( @get 'contentType' ) is 'video'
+    @set 'videoId', ( @get 'fragment' )
+  @
 
 class _MODELS.ItemModel extends _MODELS.BaseModel
 
@@ -21,6 +26,7 @@ class _MODELS.ItemModel extends _MODELS.BaseModel
     super
     
     _checkPlaylistCollection.call @
+    _checkVideo.call @
     
     @
 

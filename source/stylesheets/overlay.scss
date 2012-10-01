@@ -1,0 +1,68 @@
+$videoPlayerHeight: $contentHeight;
+$videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
+
+
+#overlay {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1000px;
+  
+  #overlay-wrapper {
+    position: inherit;
+    z-index: 3000;
+    margin-top: $headerHeight + px;
+    margin-left: 50%;
+    top: 0px;
+    left: -($siteWidth / 2) + px;
+    
+    #overlay-content {
+      position: inherit;
+      width: $siteWidth + px;
+      height: $contentHeight + px;
+      background: $colorWhite;
+      
+      #overlay-video-container {
+        position: inherit;
+        width: $videoPlayerWidth + px;
+        height: $videoPlayerHeight + px;
+      }
+      
+      #overlay-image-container {
+        position: inherit;
+        width: $siteWidth + px;
+        height: $contentHeight + px;
+      }
+    }
+      
+    #overlay-text-container {
+      position: inherit;
+      top: $contentHeight + px;
+      width: $siteWidth + px;
+      height: 100px;
+    }
+  }
+  
+  #overlay-cover-container {
+    position: inherit;
+    z-index: 2000;
+    width: inherit;
+    height: inherit;
+    
+    a {
+      position: inherit;
+      width: inherit;
+      height: inherit;
+    }
+    
+    #overlay-background {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      opacity: .50;
+      background: $colorWhite;
+    }
+  }
+}

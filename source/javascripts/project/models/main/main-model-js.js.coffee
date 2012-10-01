@@ -12,10 +12,11 @@ _getActiveSubpageItems = () ->
 
 _getActiveContentItems = () ->
   match = @get 'activeSubpageId'
+  @log match
   model = ( _getActiveSubpageItems.call @ ).find (model) -> ( model.get 'fragment' ) is match
   # @log 'activeSectionId', match
   # @log 'activeYearModel', model
-  ( model.get 'playlistCollection' ).at 0
+  model.get 'itemCollection'
   
 _getDomIds = (ids) ->
   _ids = []
@@ -48,7 +49,7 @@ class _MODELS.MainModel extends _MODELS.BaseModel
     
   getSection : -> _itemCollection.toJSON()
   getSubpage : -> ( _getActiveSubpageItems.call @ ).toJSON()
-  getContent : -> ( ( _getActiveContentItems.call @ ).get 'videoCollection' ).toJSON()
+  getContent : -> ( _getActiveContentItems.call @ ).toJSON()
   getContentById : (id) -> _.find @getVideos(), (model) -> model['videoId'] is videoId
   
   getActiveSectionDomId : -> _getDomIds.call @, [ 'activeSectionId' ] 

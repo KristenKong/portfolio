@@ -24,7 +24,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* Varibales */
 
-$siteWidth:960;
+$siteWidth: 960;
+$headerHeight: 135;
+$contentHeight: 430;
 
 /* Essential Classes */
 
@@ -44,6 +46,7 @@ a {
 #wrapper {
   position: absolute;
   margin-left: 50%;
+  top: 0px;
   left: -($siteWidth / 2) + px;
 }
 

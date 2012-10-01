@@ -19,27 +19,25 @@
 		<li id={{dom}} class="main-menu-item">
 			<a href="#{{route}}">
 				<img src="images/{{route}}/thumb.jpg" alt="{{description}}" />
-				<h4><p>{{title}}</p></h4>
-				<h5><p>{{description}}</p></h5>
+				{{> main_title_tmpl}}
 			</a>
 		</li>
 	{{/data}}
 	</ul>
 </script>
-<script id="main_content_tmpl" type="text/html">
-	{{#data}}
-		<li id={{dom}} class="main-menu-item">
-			{{#videoId}}
-				<div "#video-player-container">{{videoId}}</div>
-				<h4><p>{{title}}</p></h4>
-				<h5><p>{{description}}</p></h5>
-			{{/videoId}}
-			{{^videoId}}
-				<img src="images/{{route}}.jpg" alt="{{description}}" />
-				<h4><p>{{title}}</p></h4>
-				<h5><p>{{description}}</p></h5>
-			{{/videoId}}
-		</li>
-	{{/data}}
+<script id="main_overlay_image_tmpl" type="text/html">
+	{{^videoId}}
+	<img src="images/{{route}}.jpg" alt="{{description}}" />
+	{{/videoId}}
+</script>
+<script id="main_overlay_text_tmpl" type="text/html">
+	{{> main_title_tmpl}}
+</script>
+<script id="main_overlay_cover_tmpl" type="text/html">
+	<a href="#{{parent.attributes.parent.attributes.route}}"><div id="overlay-background"></div></a>
+</script>
+<script id="main_title_tmpl" type="text/html">
+	<h4><p>{{title}}</p></h4>
+	<h5><p>{{description}}</p></h5>
 </script>
 <!-- footer -->
