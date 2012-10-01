@@ -5,10 +5,6 @@
 	</head>
 	<body class="<%= page_classes %>">
 		<%= yield %>
-		<%= partial "app/partials/views/structure/header" %>
-		<%= partial "app/partials/views/structure/main" %>
-		<%= partial "app/partials/views/structure/footer" %>
-		<%= partial "app/partials/views/template/menu" %>
 		<script>
 			if(typeof(window.ontouchstart) !== 'undefined') {
 				document.write('<script src=javascripts/vendor/zepto.min.js><\/script>');

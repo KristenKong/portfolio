@@ -1,8 +1,42 @@
-<script id="header_menu_tmlp" type="text/html">
-	{{#items}}
-		{{> header_menu_item_tmlp}}
-	{{/items}}
+<!-- header -->
+<script id="header_menu_tmpl" type="text/html">
+	<ul>
+	{{#data}}
+		<li id={{dom}} class="header-menu-item header-menu-item-inactive">
+			<a href="#{{route}}">
+				<h3><strong>{{title}}</strong></h3>
+			</a>
+		</li>
+	{{/data}}
+	</ul>
 </script>
-<script id="header_menu_item_tmlp" type="text/html">
-	<a href="#{{route}}"><h1>{{title}}</h1></a>
+<!-- main -->
+<script id="main_work_tmpl" type="text/html">
+	<ul>
+	{{#data}}
+		<li id={{dom}} class="main-menu-item">
+			<a href="#{{route}}">
+				<img src="images/{{file}}.jpg" alt="{{description}}" />
+				<h4>{{title}}</h4>
+			</a>
+		</li>
+	{{/data}}
+	</ul>
 </script>
+<script id="main_blogs_tmpl" type="text/html">
+	<ul>
+	{{#data}}
+		<li id={{dom}} class="main-menu-item">
+			<a href="#{{route}}">
+				<img src="images/{{file}}.jpg" alt="{{description}}" />
+				<h4>{{title}}</h4>
+			</a>
+		</li>
+	{{/data}}
+	</ul>
+</script>
+<script id="main_about_tmpl" type="text/html">
+</script>
+<script id="main_contact_tmpl" type="text/html">
+</script>
+<!-- footer -->

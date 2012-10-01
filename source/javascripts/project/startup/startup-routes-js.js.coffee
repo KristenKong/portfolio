@@ -13,8 +13,6 @@ _init = (callback) ->
   
   router.route '*default', 'home', -> 
     @log 'A home route has triggered.'
-    # Reset
-    router.navigate ''
     # Update
     _MODELS.mainModel.default()
     @

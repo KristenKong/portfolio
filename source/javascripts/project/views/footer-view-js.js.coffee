@@ -12,12 +12,13 @@ class _VIEWS.FooterView extends _VIEWS.BaseView
     super
     
     _mainModel = _MODELS.mainModel
+      
+    @trigger @EVENTBUS.eventTypes.VIEW_READY, @
     
     @
     
   render: ->
     
-    @trigger @EVENTBUS.eventTypes.VIEW_READY, @
     
     @
     

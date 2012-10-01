@@ -1,4 +1,9 @@
-@import "compass";
-@import "compass/reset";
-@import "common";
-@import "media_queries";
+@import 'compass';
+@import 'compass/reset';
+@import 'colors';
+@import 'fonts';
+@import 'common';
+@import 'media-queries';
+@import 'header';
+@import 'main';
+@import 'footer';

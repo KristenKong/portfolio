@@ -22,6 +22,28 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-/* Typography */
+/* Varibales */
 
-/*Essential Classes*/
+$siteWidth:960;
+
+/* Essential Classes */
+
+body {
+  background: $colorGreyLite;
+  font-family: $fontFamilySlab;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#wrapper {
+  width: $siteWidth + px;
+  position: absolute;
+  margin-left: 50%;
+  left: -($siteWidth / 2) + px;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
