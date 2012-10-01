@@ -11,32 +11,19 @@
 	</ul>
 </script>
 <!-- main -->
-<script id="main_work_tmpl" type="text/html">
+<script id="main_work_tmpl" type="text/html">{{> main_grid_tmpl}}</script>
+<script id="main_fun_tmpl" type="text/html">{{> main_grid_tmpl}}</script>
+<script id="main_grid_tmpl" type="text/html">
 	<ul>
 	{{#data}}
 		<li id={{dom}} class="main-menu-item">
 			<a href="#{{route}}">
-				<img src="images/{{file}}.jpg" alt="{{description}}" />
-				<h4>{{title}}</h4>
+				<img src="images/{{route}}/thumb.jpg" alt="{{description}}" />
+				<h4><p>{{title}}</p></h4>
+				<h5><p>{{description}}</p></h5>
 			</a>
 		</li>
 	{{/data}}
 	</ul>
-</script>
-<script id="main_blogs_tmpl" type="text/html">
-	<ul>
-	{{#data}}
-		<li id={{dom}} class="main-menu-item">
-			<a href="#{{route}}">
-				<img src="images/{{file}}.jpg" alt="{{description}}" />
-				<h4>{{title}}</h4>
-			</a>
-		</li>
-	{{/data}}
-	</ul>
-</script>
-<script id="main_about_tmpl" type="text/html">
-</script>
-<script id="main_contact_tmpl" type="text/html">
 </script>
 <!-- footer -->

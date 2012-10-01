@@ -43,9 +43,6 @@ _setupItems = (item) ->
             # TODO : [RKP] : This is a hack.
             @trigger eventType
             ), 1
-          
-          
-          
     
     # Add additional attributes
     _.each items, (item, index) =>

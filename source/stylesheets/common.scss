@@ -30,13 +30,18 @@ $siteWidth:960;
 
 body {
   background: $colorGreyLite;
+  color: $colorGreyDark;
   font-family: $fontFamilySlab;
   font-weight: 600;
   font-size: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: $colorGreyDark;
+}
+
 #wrapper {
-  width: $siteWidth + px;
   position: absolute;
   margin-left: 50%;
   left: -($siteWidth / 2) + px;

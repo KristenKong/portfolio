@@ -1,8 +1,17 @@
 #main {
   clear: both;
+  
   .main-menu-item {
     float: left;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 40px 10px 30px 10px;
+    letter-spacing: 0.1em;
+
+    h4 {
+      padding: 10px 0 0 0;
+      color: #727272;
+    }
+    h5 {
+      padding: 5px 0 0 0;
+    }
   }
 }
