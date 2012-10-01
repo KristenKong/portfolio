@@ -32,15 +32,16 @@ _init = (callback) ->
     # Reset
     _MODELS.mainModel.attributes['activeContentId'] = undefined
     # Update
-    _MODELS.mainModel.attributes['activeSectionId'] = activeSectionId
+    # _MODELS.mainModel.attributes['activeSectionId'] = activeSectionId
+    _MODELS.mainModel.set 'activeSectionId', activeSectionId
     _MODELS.mainModel.set 'activeSubpageId', activeSubpageId
     @
     
   router.route matches.getContent(), 'content', (activeSectionId, activeSubpageId, activeContentId) -> 
     @log "Content route '#{activeContentId}' has triggered."
     # Update
-    _MODELS.mainModel.attributes['activeSectionId'] = activeSectionId
-    _MODELS.mainModel.attributes['activeSubpageId'] = activeSubpageId
+    _MODELS.mainModel.set 'activeSectionId', activeSectionId
+    _MODELS.mainModel.set 'activeSubpageId', activeSubpageId
     _MODELS.mainModel.set 'activeContentId', activeContentId
     @
   

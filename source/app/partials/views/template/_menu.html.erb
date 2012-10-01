@@ -26,4 +26,20 @@
 	{{/data}}
 	</ul>
 </script>
+<script id="main_content_tmpl" type="text/html">
+	{{#data}}
+		<li id={{dom}} class="main-menu-item">
+			{{#videoId}}
+				<div "#video-player-container">{{videoId}}</div>
+				<h4><p>{{title}}</p></h4>
+				<h5><p>{{description}}</p></h5>
+			{{/videoId}}
+			{{^videoId}}
+				<img src="images/{{route}}.jpg" alt="{{description}}" />
+				<h4><p>{{title}}</p></h4>
+				<h5><p>{{description}}</p></h5>
+			{{/videoId}}
+		</li>
+	{{/data}}
+</script>
 <!-- footer -->

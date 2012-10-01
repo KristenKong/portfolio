@@ -17,37 +17,48 @@
 										"fragment": "dirtiest-oil",
 										"title": "The Dirtiest Oil on Earth",
 										"description": "Video",
-										"contentType": "video",
-										"videoId": "DCq015rc_lk"
+										"items": [
+											{
+												"item": {
+													"fragment": "DCq015rc_lk",
+													"title": "The Dirtiest Oil on Earth - YouTube Video",
+													"description": "The Dirtiest Oil on Earth - YouTube Video.",
+													"contentType": "video"
+												}
+											}
+										]
 									}
 								}, {
 									"item": {
 										"fragment": "replacing-dinosaurs",
 										"title": "Replacing the Dinosaurs",
 										"description": "Video",
-										"contentType": "video",
-										"videoId": "AvEXzYGkorc"
+										"items": [
+											{
+												"item": {
+													"fragment": "AvEXzYGkorc",
+													"title": "Replacing the Dinosaurs - YouTube Video",
+													"description": "Replacing the Dinosaurs - YouTube Video.",
+													"contentType": "video"
+												}
+											}
+										]
 									}
 								}, {
 									"item": {
 										"fragment": "subway-map",
 										"title": "National Parks Subway Map",
 										"description": "Graphic",
-										"contentType": "image"
-									}
-								}, {
-									"item": {
-										"fragment": "subway-map",
-										"title": "National Parks Subway Map",
-										"description": "Graphic",
-										"contentType": "image"
-									}
-								}, {
-									"item": {
-										"fragment": "subway-map",
-										"title": "National Parks Subway Map",
-										"description": "Graphic",
-										"contentType": "image"
+										"items": [
+											{
+												"item": {
+													"fragment": "infographic",
+													"title": "National Parks Subway Map - Inforgraphic",
+													"description": "We came up with this fun graphic to engage our Facebook audience. This graphic was shared over 9,000 times, liked 8,000 times and received over 2,000 comments on Facebook. Soon to be a totebag.",
+													"contentType": "image"
+												}
+											}
+										]
 									}
 								}
 							]
@@ -63,21 +74,69 @@
 										"fragment": "gigsby",
 										"title": "Gigsby",
 										"description": "Poster Design Shop",
-										"contentType": "image"
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Gigsby",
+													"description": "Gigsby.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Gigsby",
+													"description": "Gigsby.",
+													"contentType": "image"
+												}
+											}
+										]
 									}
 								}, {
 									"item": {
 										"fragment": "ryan-gosling",
 										"title": "Environmental Ryan Gosling",
 										"description": "Tumblr",
-										"contentType": "image"
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Environmental Ryan Gosling",
+													"description": "Image 1.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Environmental Ryan Gosling",
+													"description": "Image 2.",
+													"contentType": "image"
+												}
+											}
+										]
 									}
 								}, {
 									"item": {
 										"fragment": "mittgomery-burns",
 										"title": "Mittgomery Burns Stickers",
 										"description": "Ambient",
-										"contentType": "image"
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Mittgomery Burns Stickers",
+													"description": "Image 1.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Mittgomery Burns Stickers",
+													"description": "Image 2.",
+													"contentType": "image"
+												}
+											}
+										]
 									}
 								}
 							]
@@ -87,42 +146,14 @@
 							"fragment": "about",
 							"title": "About",
 							"description": "Find out a bit more.",
-							"items": [
-								{
-									"item": {
-										"fragment": "2.1",
-										"title": "2.1 Title",
-										"description": "2.1 description."
-									}
-								}, {
-									"item": {
-										"fragment": "2.2",
-										"title": "2.2 Title",
-										"description": "2.2 description."
-									}
-								}
-							]
+							"items": []
 						}
 					}, {
 						"item": {
 							"fragment": "contact",
 							"title": "Contact",
 							"description": "I can be reached at:",
-							"items": [
-								{
-									"item": {
-										"fragment": "2.1",
-										"title": "2.1 Title",
-										"description": "2.1 description."
-									}
-								}, {
-									"item": {
-										"fragment": "2.2",
-										"title": "2.2 Title",
-										"description": "2.2 description."
-									}
-								}
-							]
+							"items": []
 						}
 					}
 				]
