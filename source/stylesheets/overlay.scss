@@ -8,7 +8,7 @@ $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   
   #overlay-wrapper {
     position: inherit;
@@ -42,25 +42,35 @@ $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
       top: $contentHeight + px;
       width: $siteWidth + px;
       height: 100px;
+      background: $colorWhite;
+      padding: 0 10px 0 10px;
+      
+      h4 {
+        padding: 10px 0 0 0;
+        color: #727272;
+      }
+      h5 {
+        padding: 20px 0 0 0;
+      }
     }
   }
   
   #overlay-cover-container {
     position: inherit;
     z-index: 2000;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     
     a {
       position: inherit;
-      width: inherit;
-      height: inherit;
+      width: 100%;
+      height: 100%;
     }
     
     #overlay-background {
       position: absolute;
-      width: inherit;
-      height: inherit;
+      width: 100%;
+      height: 100%;
       opacity: .50;
       background: $colorWhite;
     }

@@ -9,12 +9,13 @@ $paddingTop: 39;
   height: $headerHeight + px;
 
   #header-menu {
-    padding: 10px 0 0 $paddingLeft + px;
+    padding: 0 0 0 $paddingLeft + px;
   } 
    
   .header-menu-item {
     float: left;
-    padding: 0 80px 0 0;
+    padding: 10px 80px 0 0;
+    
     h3 {
       font-size: 16px;
       text-transform: uppercase;

@@ -30,6 +30,150 @@
 									}
 								}, {
 									"item": {
+										"fragment": "voter-guide",
+										"title": "Sierra Club Voter Guide",
+										"description": "Responsive Site",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Sierra Club Voter Guide",
+													"description": "Sierra Club Voter Guide.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "best-buy-xmas",
+										"title": "Best Buy Christmas",
+										"description": "Microsite",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Best Buy Christmas",
+													"description": "Best Buy Christmas.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "subway-map",
+										"title": "National Parks Subway Map",
+										"description": "Graphic",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "National Parks Subway Map",
+													"description": "National Parks Subway Map.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "cost-coal",
+										"title": "Cost of Coal Photo Essay",
+										"description": "Site",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Cost of Coal Photo Essay",
+													"description": "Cost of Coal Photo Essay.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "wind-jobs",
+										"title": "Wind Jobs Infographic",
+										"description": "Graphic",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Wind Jobs Infographic",
+													"description": "Wind Jobs Infographic.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "club-outings",
+										"title": "Sierra Club Outings",
+										"description": "Site",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Sierra Club Outings",
+													"description": "Sierra Club Outings.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "logos",
+										"title": "Logos",
+										"description": "Various Clients",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Logos",
+													"description": "Logos.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "welcome-center",
+										"title": "Welcome Center",
+										"description": "Site",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Welcome Center",
+													"description": "Welcome Center.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "extreme-masters",
+										"title": "Intel Extreme Masters",
+										"description": "Campaign",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Intel Extreme Masters",
+													"description": "Intel Extreme Masters.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
 										"fragment": "replacing-dinosaurs",
 										"title": "Replacing the Dinosaurs",
 										"description": "Video",
@@ -46,15 +190,15 @@
 									}
 								}, {
 									"item": {
-										"fragment": "subway-map",
-										"title": "National Parks Subway Map",
-										"description": "Graphic",
+										"fragment": "safe-sushi",
+										"title": "Safe Sushi",
+										"description": "Mobile App and Graphics",
 										"items": [
 											{
 												"item": {
-													"fragment": "infographic",
-													"title": "National Parks Subway Map - Inforgraphic",
-													"description": "We came up with this fun graphic to engage our Facebook audience. This graphic was shared over 9,000 times, liked 8,000 times and received over 2,000 comments on Facebook. Soon to be a totebag.",
+													"fragment": "image-1",
+													"title": "Safe Sushi",
+													"description": "Safe Sushi.",
 													"contentType": "image"
 												}
 											}
@@ -125,13 +269,75 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Mittgomery Burns Stickers",
+													"description": "Stickers.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "kristen-believer",
+										"title": "Kristen is a Believer",
+										"description": "Tumblr",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Kristen is a Believer",
+													"description": "Kristen is a Believer.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Kristen is a Believer",
+													"description": "Kristen is a Believer.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "free-stuff",
+										"title": "Free Stuff SF",
+										"description": "Tumblr",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Free Stuff SF",
 													"description": "Image 1.",
 													"contentType": "image"
 												}
 											}, {
 												"item": {
 													"fragment": "image-2",
-													"title": "Mittgomery Burns Stickers",
+													"title": "Free Stuff SF",
+													"description": "Image 2.",
+													"contentType": "image"
+												}
+											}
+										]
+									}
+								}, {
+									"item": {
+										"fragment": "urban-explorations",
+										"title": "Urban Exploration",
+										"description": "Photographs",
+										"items": [
+											{
+												"item": {
+													"fragment": "image-1",
+													"title": "Urban Exploration",
+													"description": "Image 1.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Urban Exploration",
 													"description": "Image 2.",
 													"contentType": "image"
 												}

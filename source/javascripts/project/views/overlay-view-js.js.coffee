@@ -3,6 +3,7 @@ _MODELS = @__get_project_namespace__ [ "Models" ]
 _VIEWS = @__get_project_namespace__ [ "Views" ]
 
 _mainModel = undefined
+$_overlay = undefined
 $_videoContainer = undefined
 $_imageContainer = undefined
 $_textContainer = undefined
@@ -16,6 +17,7 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
   initialize : (callback) ->
     super
     
+    $_overlay = $ '#overlay'
     $_videoContainer = $ '#overlay-video-container'
     $_imageContainer = $ '#overlay-image-container'
     $_textContainer = $ '#overlay-text-container'
@@ -64,5 +66,11 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     @$el.fadeIn 250
     
     @
+    
+  resize: (w, h) ->
+    @log "width: #{w}, height: #{h}"
+    
+    $_overlay.css 'height', h
+    $_coverContainer.css 'height', h
     
   @

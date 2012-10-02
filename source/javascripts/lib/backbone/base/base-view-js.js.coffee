@@ -17,7 +17,10 @@ class _VIEWS.BaseView extends Backbone.View
     @ROUTER = _NS.navigationRouter
     @EVENTBUS = _NS.eventBus
     @touchOS = _NS.Config.touchOS
+    
     _NS.eventBus.bind _NS.eventBus.eventTypes.WINDOW_RESIZE, (w, h) => @resize w, h
+    
+    @
   
   resize: (w, h) ->
     # @log "width: #{w}, height: #{h}"
