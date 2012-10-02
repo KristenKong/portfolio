@@ -24,12 +24,19 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     $_coverContainer = $ '#overlay-cover-container'
     
     @$el.hide()
-    @$el.on 'click', (eventDispatcher) => @$el.hide()
     
     _mainModel = _MODELS.mainModel
     _mainModel.on 'change:activeSubpageId', (model) =>
       @log 'A Subpage has changed - update view.'
-      @render()
+      
+      data = _mainModel.getContent()
+      
+      if data
+        @render data[ 0 ]
+      else
+        @$el.hide()
+        
+      @
       
     _videoPlayer = new _VIEWS.VideoPlayer()
     _videoPlayer.init undefined, =>
@@ -37,16 +44,12 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     
     @
     
-  render: ->
+  render: (data) ->
     
     activeSectionId = _mainModel.get 'activeSectionId'
     activeSubpageId = _mainModel.get 'activeSubpageId'
     
     @log "render : '#{activeSectionId}' : '#{activeSubpageId}'"
-    
-    data = _mainModel.getContent()[ 0 ]
-    
-    @log data
     
     if data.videoId
       $_imageContainer.hide()

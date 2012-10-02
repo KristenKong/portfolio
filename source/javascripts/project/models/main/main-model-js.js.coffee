@@ -3,19 +3,12 @@ _MODELS = @__get_project_namespace__ [ "Models" ]
 
 _itemCollection = undefined
 
-_getActiveSubpageItems = () ->
-  match = @get 'activeSectionId'
-  model = _itemCollection.find (model) -> ( model.get 'fragment' ) is match
-  # @log 'activeSectionId', match
-  # @log 'activeYearModel', model
+_getSubpageItems = (activeSectionId) ->
+  model = _itemCollection.find (model) -> ( model.get 'fragment' ) is activeSectionId
   model.get 'itemCollection'
 
-_getActiveContentItems = () ->
-  match = @get 'activeSubpageId'
-  @log match
-  model = ( _getActiveSubpageItems.call @ ).find (model) -> ( model.get 'fragment' ) is match
-  # @log 'activeSectionId', match
-  # @log 'activeYearModel', model
+_getContentItems = (activeSectionId, activeSubpageId) ->
+  model = ( _getSubpageItems.call @, activeSectionId ).find (model) -> ( model.get 'fragment' ) is activeSubpageId
   model.get 'itemCollection'
   
 _getDomIds = (ids) ->
@@ -48,8 +41,22 @@ class _MODELS.MainModel extends _MODELS.BaseModel
     @
     
   getSection : -> _itemCollection.toJSON()
-  getSubpage : -> ( _getActiveSubpageItems.call @ ).toJSON()
-  getContent : -> ( _getActiveContentItems.call @ ).toJSON()
+  getSubpage : -> 
+    activeSectionId = @get 'activeSectionId'
+    if activeSectionId
+      return ( _getSubpageItems.call @, activeSectionId ).toJSON()
+    else
+      return undefined
+      
+  getContent : -> 
+    activeSectionId = @get 'activeSectionId'
+    activeSubpageId = @get 'activeSubpageId'
+    if activeSectionId and activeSubpageId
+      return ( _getContentItems.call @, activeSectionId, activeSubpageId ).toJSON()
+    else 
+      return undefined
+    
+    
   getContentById : (id) -> _.find @getVideos(), (model) -> model['videoId'] is videoId
   
   getActiveSectionDomId : -> _getDomIds.call @, [ 'activeSectionId' ] 

@@ -20,9 +20,12 @@ _init = (callback) ->
   # TODO : [RKP] : There's gotta be a more elegant way to do this
   router.route matches.getSection(), 'section', (activeSectionId) -> 
     @log "Section route '#{activeSectionId}' has triggered."
+    # _MODELS.mainModel.attributes['activeContentId'] = undefined
+    # _MODELS.mainModel.attributes['activeSubpageId'] = undefined
+    
     # Reset
-    _MODELS.mainModel.attributes['activeContentId'] = undefined
-    _MODELS.mainModel.attributes['activeSubpageId'] = undefined
+    _MODELS.mainModel.set 'activeSubpageId', undefined
+    _MODELS.mainModel.set 'activeContentId', undefined
     # Update
     _MODELS.mainModel.set 'activeSectionId', activeSectionId
     @
