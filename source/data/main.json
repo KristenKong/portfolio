@@ -273,52 +273,6 @@
 									}
 								}, {
 									"item": {
-										"fragment": "kristen-believer",
-										"title": "Kristen is a Believer",
-										"description": "Tumblr",
-										"items": [
-											{
-												"item": {
-													"fragment": "image-1",
-													"title": "Kristen is a Believer",
-													"description": "Kristen is a Believer.",
-													"contentType": "image"
-												}
-											}, {
-												"item": {
-													"fragment": "image-2",
-													"title": "Kristen is a Believer",
-													"description": "Kristen is a Believer.",
-													"contentType": "image"
-												}
-											}
-										]
-									}
-								}, {
-									"item": {
-										"fragment": "free-stuff",
-										"title": "Free Stuff SF",
-										"description": "Tumblr",
-										"items": [
-											{
-												"item": {
-													"fragment": "image-1",
-													"title": "Free Stuff SF",
-													"description": "Image 1.",
-													"contentType": "image"
-												}
-											}, {
-												"item": {
-													"fragment": "image-2",
-													"title": "Free Stuff SF",
-													"description": "Image 2.",
-													"contentType": "image"
-												}
-											}
-										]
-									}
-								}, {
-									"item": {
 										"fragment": "urban-explorations",
 										"title": "Urban Exploration",
 										"description": "Photographs",

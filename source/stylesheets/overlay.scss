@@ -1,5 +1,8 @@
-$videoPlayerHeight: $contentHeight;
-$videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
+// $videoPlayerHeight: $contentHeight;
+// $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
+$videoPlayerWidth: $siteWidth;
+$videoPlayerHeight: (($videoPlayerWidth / 16) * 9);
+$videoPlayerTop: ($contentHeight - $videoPlayerHeight) / 2;
 $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
 
 #overlay {
@@ -13,7 +16,7 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
     position: inherit;
     z-index: 3000;
     margin-left: 50%;
-    top: $headerHeight + px;
+    top: $topHeight + px;
     left: -($siteWidth / 2) + px;
     
     #overlay-content {
@@ -30,6 +33,7 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
         
         #overlay-video-size {
           position: inherit;
+          padding-top: $videoPlayerTop + px;
           padding-left: $videoPlayerLeft + px;
           width: $videoPlayerWidth + px;
           height: $videoPlayerHeight + px;
@@ -45,7 +49,7 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       
     #overlay-text-container {
       position: inherit;
-      top: ($contentHeight + $headerHeight) + px;
+      top: ($topHeight + $contentHeight) + px;
       width: $siteWidth + px;
       height: 100px;
       background: $colorWhite;
