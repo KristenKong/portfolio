@@ -1,21 +1,18 @@
 $videoPlayerHeight: $contentHeight;
 $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
 
-
 #overlay {
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   z-index: 1000;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
   
   #overlay-wrapper {
     position: inherit;
     z-index: 3000;
-    margin-top: $headerHeight + px;
     margin-left: 50%;
-    top: 0px;
+    top: $headerHeight + px;
     left: -($siteWidth / 2) + px;
     
     #overlay-content {
@@ -39,7 +36,7 @@ $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
       
     #overlay-text-container {
       position: inherit;
-      top: $contentHeight + px;
+      top: ($contentHeight + $headerHeight) + px;
       width: $siteWidth + px;
       height: 100px;
       background: $colorWhite;

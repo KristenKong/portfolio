@@ -2,6 +2,7 @@ $paddingLeft: 24;
 $paddingTop: 39;
 
 #header {
+  position: fixed;
   clear: both;
   background: $colorTeal url('../images/header-gradient.png') repeat-x;
   color: $colorWhite;
