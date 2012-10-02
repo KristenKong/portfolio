@@ -3,7 +3,6 @@ _MODELS = @__get_project_namespace__ [ "Models" ]
 _VIEWS = @__get_project_namespace__ [ "Views" ]
 
 _mainModel = undefined
-$_articles = undefined
 $_active = undefined
 
 class _VIEWS.MainView extends _VIEWS.BaseView
@@ -13,8 +12,7 @@ class _VIEWS.MainView extends _VIEWS.BaseView
   initialize : ->
     super
     
-    $_articles = @$el.find 'article'
-    $_articles.hide()
+    @$el.find('article').hide()
     
     _mainModel = _MODELS.mainModel
     _mainModel.on 'change:activeSectionId', (model) =>
@@ -25,7 +23,7 @@ class _VIEWS.MainView extends _VIEWS.BaseView
     
   render: ->
     
-    $_articles.hide()
+    if $_active then $_active.hide()
     
     activeSectionId = _mainModel.get 'activeSectionId'
     

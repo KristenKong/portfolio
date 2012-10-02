@@ -30,7 +30,7 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
         
         #overlay-video-size {
           position: inherit;
-          left: $videoPlayerLeft + px;
+          padding-left: $videoPlayerLeft + px;
           width: $videoPlayerWidth + px;
           height: $videoPlayerHeight + px;
         }

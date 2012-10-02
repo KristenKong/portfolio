@@ -3,12 +3,22 @@
 	<ul>
 	{{#data}}
 		<li id={{dom}} class="header-menu-item header-menu-item-inactive">
-			<a href="#{{route}}" target="_self">
-				<h3><strong>{{title}}</strong></h3>
-			</a>
+			{{^link}}
+				<a href="#{{route}}" target="_self">
+					{{> header_menu_item_tmpl}}
+				</a>
+			{{/link}}
+			{{#link}}
+				<a href="{{src}}" target="{{target}}">
+					{{> header_menu_item_tmpl}}
+				</a>
+			{{/link}}
 		</li>
 	{{/data}}
 	</ul>
+</script>
+<script id="header_menu_item_tmpl" type="text/html">
+	<h3><strong>{{title}}</strong></h3>
 </script>
 <!-- main -->
 <script id="main_work_tmpl" type="text/html">{{> main_grid_tmpl}}</script>
@@ -25,6 +35,7 @@
 	{{/data}}
 	</ul>
 </script>
+<!-- overlay -->
 <script id="main_overlay_image_tmpl" type="text/html">
 	{{^videoId}}
 	<img src="images/{{route}}.jpg" alt="{{description}}" />
@@ -35,6 +46,13 @@
 </script>
 <script id="main_overlay_cover_tmpl" type="text/html">
 	<a href="#{{parent.attributes.parent.attributes.route}}"><div id="overlay-background"></div></a>
+</script>
+<script id="main_about_tmpl" type="text/html">
+	{{#data}}
+	<img src="images/about-me.jpg" alt="About me." />
+	<h5><p>{{{description}}}</p></h5>
+	<a href="{{link.src}}" target="{{link.target}}"><p>{{link.title}}</p></a>
+	{{/data}}
 </script>
 <script id="main_title_tmpl" type="text/html">
 	<h4><p>{{title}}</p></h4>

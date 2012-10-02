@@ -3,14 +3,11 @@
 		"item_data": {
 			"item": {
 				"fragment": "",
-				"title": "",
-				"description": "",
 				"items": [
 					{
 						"item": {
 							"fragment": "work",
 							"title": "Work",
-							"description": "Here are some of my most recent projects.",
 							"items": [
 								{
 									"item": {
@@ -211,7 +208,6 @@
 						"item": {
 							"fragment": "fun",
 							"title": "Fun",
-							"description": "These are some of the fun projects I've created.",
 							"items": [
 								{
 									"item": {
@@ -351,15 +347,27 @@
 						"item": {
 							"fragment": "about",
 							"title": "About",
-							"description": "Find out a bit more.",
-							"items": []
+							"items": [
+								{
+									"item": {
+										"description": "For the past 8 years, I have helped to build brands from <br/>large corporations to penniless rock bands. I’ve worked with <br/>copywriters, campaign organizers, strategists, videographers, <br/>research biologists, social media specialists and the occasional <br/>frontman to create memorable brand experiences. <br/><br/>My Achilles’ heel is burgers and soccer. I rarely yell, but <br/>can’t keep it together during a Euro Cup. By the way, the <br/>best burger lives in the bowling alley on 17th and Shotwell.",
+										"link": {
+											"title": "Download my Resume",
+											"src": "files/Kristen.Kong-Art.Director.pdf",
+											"target": "_blank"
+										}
+									}
+								}
+							]
 						}
 					}, {
 						"item": {
-							"fragment": "contact",
-							"title": "Contact",
-							"description": "I can be reached at:",
-							"items": []
+							"fragment": "resume",
+							"link": {
+								"title": "Resume",
+								"src": "files/Kristen.Kong-Art.Director.pdf",
+								"target": "_blank"
+							}
 						}
 					}
 				]
