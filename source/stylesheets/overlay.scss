@@ -1,5 +1,6 @@
 $videoPlayerHeight: $contentHeight;
 $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
+$videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
 
 #overlay {
   // position: absolute;
@@ -23,8 +24,16 @@ $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
       
       #overlay-video-container {
         position: inherit;
-        width: $videoPlayerWidth + px;
-        height: $videoPlayerHeight + px;
+        background: black;
+        width: $siteWidth + px;
+        height: $contentHeight + px;
+        
+        #overlay-video-size {
+          position: inherit;
+          left: $videoPlayerLeft + px;
+          width: $videoPlayerWidth + px;
+          height: $videoPlayerHeight + px;
+        }
       }
       
       #overlay-image-container {
