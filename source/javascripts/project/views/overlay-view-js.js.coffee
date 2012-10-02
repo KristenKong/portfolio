@@ -34,6 +34,7 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
       if data
         @render data[ 0 ]
       else
+        _videoPlayer.stopVideo()
         @$el.hide()
         
       @
@@ -54,6 +55,7 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     if data.videoId
       $_imageContainer.hide()
       $_videoContainer.show()
+      _videoPlayer.loadVideoById data.videoId
     else
       html = ich.main_overlay_image_tmpl data
       $_imageContainer.html html
