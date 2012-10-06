@@ -1,5 +1,3 @@
-// $videoPlayerHeight: $contentHeight;
-// $videoPlayerWidth: (($videoPlayerHeight - 10) / 9) * 16;
 $videoPlayerWidth: $siteWidth;
 $videoPlayerHeight: (($videoPlayerWidth / 16) * 9);
 $videoPlayerTop: ($contentHeight - $videoPlayerHeight) / 2;
