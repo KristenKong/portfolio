@@ -89,14 +89,17 @@ _onYouTubePlayerAPIReady = ->
   _log "API ready"
   
   _win.onYouTubePlayerAPIReady = null
+  
+  related = 
 
   params =
     playerVars :
       enablejsapi : 1
-      autoplay : if _playerProps.autoplay is true then 1 else 0
-      controls : if _playerProps.controls is true then 1 else 0
-      autohide : if _playerProps.autohide is true then 1 else 0
-      rel : _playerProps.rel+"&wmode=transparent"
+      autoplay : _playerProps.autoplay
+      controls : _playerProps.controls
+      autohide : _playerProps.autohide
+      showinfo : _playerProps.showinfo
+      related : _playerProps.related + "&wmode=transparent"
       
     width : _playerProps.width
     height : _playerProps.height

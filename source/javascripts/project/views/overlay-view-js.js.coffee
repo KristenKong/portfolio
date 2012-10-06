@@ -3,12 +3,14 @@ _MODELS = @__get_project_namespace__ [ "Models" ]
 _VIEWS = @__get_project_namespace__ [ "Views" ]
 
 _mainModel = undefined
+_videoPlayer = undefined
+
 $_overlay = undefined
 $_videoContainer = undefined
 $_imageContainer = undefined
 $_textContainer = undefined
 $_coverContainer = undefined
-_videoPlayer = undefined
+$_closeContainer = undefined
 
 class _VIEWS.OverlayView extends _VIEWS.BaseView
 
@@ -22,6 +24,7 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     $_imageContainer = $ '#overlay-image-container'
     $_textContainer = $ '#overlay-text-container'
     $_coverContainer = $ '#overlay-cover-container'
+    $_closeContainer = $ '#overlay-close-container'
     
     @$el.hide()
     
@@ -67,6 +70,9 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     
     html = ich.main_overlay_cover_tmpl data
     $_coverContainer.html html                                                                                                                    
+    
+    html = ich.main_overlay_close_tmpl data
+    $_closeContainer.html html                                                                                                                    
     
     @$el.fadeIn 250
     
