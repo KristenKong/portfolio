@@ -4,8 +4,13 @@ $videoPlayerTop: ($contentHeight - $videoPlayerHeight) / 2;
 $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
 
 #overlay {
-  // position: absolute;
+  // XXX : [RKP] : Begin hack
   position: fixed;
+  left: 0;
+  // XXX : [RKP] : Need to hide off screen until YouTube IFrame Player has initilaized
+  position: absolute;
+  left: 2000px;
+  // XXX : [RKP] : End hack
   z-index: 1000;
   width: 100%;
   height: 100%;
