@@ -69,10 +69,27 @@ $paddingTop: 39;
     float: right;
     padding: ($paddingTop + px) 10px 0 0;
     
+    li {
+      float: left;
+    }
+    
+    p {
+      float: left;
+      width: 40px;
+      height: 34px;
+    }
+    
+    #header-social-mail {
+      p {
+        background: url('../images/button-social-mail.png') no-repeat;
+      }
+      p:hover {
+        background: url('../images/button-social-mail-hover.png') no-repeat !important;
+      }
+    }
+    
     #header-social-linkedin {
       p {
-        width: 39px;
-        height: 35px;
         background: url('../images/button-social-linkedin.png') no-repeat;
       }
       p:hover {
