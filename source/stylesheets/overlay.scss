@@ -4,8 +4,13 @@ $videoPlayerTop: ($contentHeight - $videoPlayerHeight) / 2;
 $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
 
 #overlay {
-  // position: absolute;
+  // XXX : [RKP] : Begin hack
   position: fixed;
+  left: 0;
+  // XXX : [RKP] : Need to hide off screen until YouTube IFrame Player has initilaized
+  position: absolute;
+  left: 2000px;
+  // XXX : [RKP] : End hack
   z-index: 1000;
   width: 100%;
   height: 100%;
@@ -14,11 +19,26 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
     position: inherit;
     z-index: 3000;
     margin-left: 50%;
-    top: $topHeight + px;
+    // top: $topHeight + px;
     left: -($siteWidth / 2) + px;
+    
+    #overlay-close-container {
+      position: inherit;
+      width: $siteWidth + px;
+      
+      a {
+        color: $colorWhite;
+        text-transform: uppercase;
+        float: right;
+        padding: 10px 10px 0 10px;
+        height: $topHeight + px;
+        background: $colorTeal;
+      }
+    }
     
     #overlay-content {
       position: inherit;
+      top: $topHeight + px;
       width: $siteWidth + px;
       height: $contentHeight + px;
       background: $colorWhite;
@@ -51,14 +71,20 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       width: $siteWidth + px;
       height: 100px;
       background: $colorWhite;
-      padding: 0 10px 0 10px;
+      
+      a {
+        color: $colorTeal;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
       
       h4 {
-        padding: 10px 0 0 0;
+        padding: 10px 0 0px 10px;
         color: #727272;
       }
       h5 {
-        padding: 20px 0 0 0;
+        padding: 20px 0 10px 10px;
       }
     }
   }
@@ -80,7 +106,7 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       width: 100%;
       height: 100%;
       opacity: .50;
-      background: $colorWhite;
+      background: $colorWhite * .9;
     }
   }
 }

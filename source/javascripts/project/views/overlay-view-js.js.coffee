@@ -3,12 +3,13 @@ _MODELS = @__get_project_namespace__ [ "Models" ]
 _VIEWS = @__get_project_namespace__ [ "Views" ]
 
 _mainModel = undefined
-$_overlay = undefined
+_videoPlayer = undefined
+
 $_videoContainer = undefined
 $_imageContainer = undefined
 $_textContainer = undefined
 $_coverContainer = undefined
-_videoPlayer = undefined
+$_closeContainer = undefined
 
 class _VIEWS.OverlayView extends _VIEWS.BaseView
 
@@ -17,13 +18,12 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
   initialize : (callback) ->
     super
     
-    $_overlay = $ '#overlay'
     $_videoContainer = $ '#overlay-video-container'
     $_imageContainer = $ '#overlay-image-container'
     $_textContainer = $ '#overlay-text-container'
     $_coverContainer = $ '#overlay-cover-container'
+    $_closeContainer = $ '#overlay-close-container'
     
-    @$el.hide()
     
     _mainModel = _MODELS.mainModel
     _mainModel.on 'change:activeSubpageId', (model) =>
@@ -41,6 +41,9 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
       
     _videoPlayer = new _VIEWS.VideoPlayer()
     _videoPlayer.init undefined, =>
+      @$el.hide()
+      @$el.css 'position', 'absolute'
+      @$el.css 'left', 0
       @trigger @EVENTBUS.eventTypes.VIEW_READY, @
     
     @
@@ -68,6 +71,9 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     html = ich.main_overlay_cover_tmpl data
     $_coverContainer.html html                                                                                                                    
     
+    html = ich.main_overlay_close_tmpl data
+    $_closeContainer.html html                                                                                                                    
+    
     @$el.fadeIn 250
     
     @
@@ -75,7 +81,7 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
   resize: (w, h) ->
     @log "width: #{w}, height: #{h}"
     
-    $_overlay.css 'height', h
+    @$el.css 'height', h
     $_coverContainer.css 'height', h
     
   @
