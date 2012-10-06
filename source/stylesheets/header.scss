@@ -51,8 +51,8 @@ $paddingTop: 39;
       clear: both;
       float: left;
       font-size: 33px;
-      padding: ($paddingTop + 7) + px 0 0 $paddingLeft + px;
-      font-weight: 400;
+      padding: ($paddingTop + 4) + px 0 0 $paddingLeft + px;
+      font-weight: 300;
     }
   }
   h2 {
@@ -61,13 +61,13 @@ $paddingTop: 39;
       font-size: 30px;
       font-family: $fontFamilyScript;
       font-weight: 100;
-      padding: ($paddingTop + 5) + px 0 0 $paddingLeft + px;
+      padding: ($paddingTop + 6) + px 0 0 $paddingLeft + px;
     }
   }
   
   #header-social {
     float: right;
-    padding: ($paddingTop + px) 10px 0 0;
+    padding: ($paddingTop + px) 26px 0 0;
     
     li {
       float: left;
