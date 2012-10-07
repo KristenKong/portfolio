@@ -3,6 +3,7 @@ _VIEWS = @__get_project_namespace__ [ "Views" ]
 _MODELS = @__get_project_namespace__ [ "Models" ]
 _HELPERS = @__get_project_namespace__ [ "Helpers" ]
 
+
 class _VIEWS.BaseView extends Backbone.View
   
   className : "BaseView"
@@ -10,6 +11,7 @@ class _VIEWS.BaseView extends Backbone.View
   MODELS : _MODELS
   ROUTER : undefined
   EVENTBUS : undefined
+  visibility : true
     
   initialize : ->
     @className = if @el then "#{@className} ##{@el.id}" or "#{@className} .#{el.className}" else @className
@@ -22,6 +24,26 @@ class _VIEWS.BaseView extends Backbone.View
     
     @
   
+  hide: (speed = 0, delay = 0) ->
+    @log 'hide'
+    # if @visibility is false then return @
+    if speed isnt 0
+      @$el.delay(delay).fadeOut(speed, => @visibility = false)
+    else
+      @$el.delay(delay).hide()
+      @visibility = false
+    @
+  
+  show: (speed = 0, delay = 0) ->
+    @log 'show'
+    # if @visibility is true then return @
+    if speed isnt 0
+      @$el.delay(delay).fadeIn(speed, => @visibility = true)
+    else
+      @$el.delay(delay).show()
+      @visibility = true
+    @
+    
   resize: (w, h) ->
     # @log "width: #{w}, height: #{h}"
   
