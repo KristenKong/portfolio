@@ -92,7 +92,7 @@ configure :build do
   activate :relative_assets
   activate :cache_buster
   # TODO : [RKP] : Smusher fails if too many images on Heroku
-  # activate :smusher
+  activate :smusher
   # activate :gzip
   # activate :asset_hash
 end
