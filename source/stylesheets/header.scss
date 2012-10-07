@@ -47,21 +47,21 @@ $paddingTop: 39;
   }
   
   h1 {
-    p {
-      clear: both;
-      float: left;
-      font-size: 33px;
-      padding: ($paddingTop + 4) + px 0 0 $paddingLeft + px;
-      font-weight: 300;
-    }
+    clear: both;
+    float: left;
+    font-size: 33px;
+    padding: ($paddingTop + 4) + px 0 0 $paddingLeft + px;
+    font-weight: 300;
   }
   h2 {
-    p {
-      float: left;
-      font-size: 30px;
-      font-family: $fontFamilyScript;
-      font-weight: 100;
-      padding: ($paddingTop + 6) + px 0 0 $paddingLeft + px;
+    float: left;
+    font-size: 20px;
+    font-family: $fontFamilyScript;
+    font-weight: 100;
+    padding: ($paddingTop + 4) + px 0 0 $paddingLeft + px;
+    
+    span {
+      font-size: 32px;
     }
   }
   

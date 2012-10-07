@@ -65,11 +65,13 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       }
     }
       
+    $padding: 40px;
+    
     #overlay-text-container {
       position: inherit;
       top: ($topHeight + $contentHeight) + px;
       width: $siteWidth + px;
-      height: 100px;
+      // height: 100px;
       background: $colorWhite;
       
       a {
@@ -80,11 +82,11 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       }
       
       h4 {
-        padding: 10px 0 0px 10px;
+        padding: $padding $padding 0px $padding;
         color: #727272;
       }
       h5 {
-        padding: 20px 0 10px 10px;
+        padding: 10px $padding $padding $padding;
       }
     }
   }
