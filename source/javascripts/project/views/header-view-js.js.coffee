@@ -14,13 +14,16 @@ class _VIEWS.HeaderView extends _VIEWS.BaseView
     
     _mainModel = _MODELS.mainModel
     
+    @hide()
+    
     data = _mainModel.getSection()
     html = ich.header_menu_tmpl { data : data }
-    @$el.find( '#header-menu').html html
+    @$el.find('#header-menu').html html
     
     _mainModel.on 'change:activeSectionId', (model) =>
       @log 'A Section has changed - update view.'
       @render()
+      @show 250
       
     @trigger @EVENTBUS.eventTypes.VIEW_READY, @
     
