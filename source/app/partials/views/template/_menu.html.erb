@@ -27,10 +27,16 @@
 	<ul>
 	{{#data}}
 		<li id={{dom}} class="main-menu-item">
+			{{#disabled}}
+			<img src="images/{{route}}/thumb.jpg" alt="{{description}}" />
+			{{> main_title_tmpl}}
+			{{/disabled}}
+			{{^disabled}}
 			<a href="#{{route}}">
 				<img src="images/{{route}}/thumb.jpg" alt="{{description}}" />
 				{{> main_title_tmpl}}
 			</a>
+			{{/disabled}}
 		</li>
 	{{/data}}
 	</ul>

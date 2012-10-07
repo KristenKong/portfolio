@@ -12,14 +12,14 @@
 								{
 									"item": {
 										"fragment": "dirtiest-oil",
-										"title": "The Dirtiest Oil on Earth",
+										"title": "The Tar Sands Pipeline",
 										"description": "Video",
 										"items": [
 											{
 												"item": {
 													"fragment": "DCq015rc_lk",
-													"title": "The Dirtiest Oil on Earth - YouTube Video",
-													"description": "<a href=\"http://www.kristenkong.com\">Kristen Kong</a>",
+													"title": "The Tar Sands Pipeline - YouTube Video",
+													"description": "The focus of this video was to show people that the Tar Sands Pipeline was not in their interests. It tells people what tar sands is for, how hazardously it is mined and how we can achieve energy independence without it. This video was picked up by <a href=\"http://www.rollingstone.com/politics/blogs/national-affairs/why-tar-sands-oil-isnt-worth-the-trouble-20120618\"> Rolling Stone </a> and <a href=\"http://www.huffingtonpost.com/2012/06/06/sierra-club-beyond-oil-campaign_n_1571559.html\"> Huffington Post. </a>",
 													"contentType": "video"
 												}
 											}
@@ -29,13 +29,13 @@
 									"item": {
 										"fragment": "voter-guide",
 										"title": "Sierra Club Voter Guide",
-										"description": "Responsive Site",
+										"description": "Responsive Website",
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
 													"title": "Sierra Club Voter Guide",
-													"description": "Sierra Club Voter Guide.",
+													"description": "The Club endorsed upwards of 1000 candidates this voting season and we wanted voters to be able to make informed decisions on the best candidates for the environment. Since the site is responsive, it would be easy to access in the voting booth. This was picked up by <a href=\"http://redgreenandblue.org/2010/10/27/top-green-voter-guides\"> Red Green and Blue. </a>",
 													"contentType": "image"
 												}
 											}
@@ -51,7 +51,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Best Buy Christmas",
-													"description": "Best Buy Christmas.",
+													"description": "For this pitch, our team created a microsite with several interactive components including a gift list builder, a snowglobe game and sitting on Santa's lap photo app.",
 													"contentType": "image"
 												}
 											}
@@ -67,7 +67,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "National Parks Subway Map",
-													"description": "National Parks Subway Map.",
+													"description": "We came up with this fun graphic to engage our Facebook audience. This graphic was shared over 9,000 times, liked 8,000 times and received over 2,000 comments on Facebook.  It was featured on over 25 blogs and news sites including, <a href=\"http://green.blogs.nytimes.com/2012/08/10/on-our-radar-science-teachers-unleashing-invasive-species\"> New York Times </a>, <a href=\"http://www.upworthy.com/the-most-scenic-subway-ride-youll-never-take\"> Upworthy </a>, <a href=\"http://www.good.is/posts/america-s-national-parks-as-a-subway-map\"> Good.is </a>, Smithsonian, and Visual.ly. Soon to be a totebag.",
 													"contentType": "image"
 												}
 											}
@@ -76,14 +76,15 @@
 								}, {
 									"item": {
 										"fragment": "cost-coal",
-										"title": "Cost of Coal Photo Essay",
+										"title": "The Cost of Coal Photo Essay",
 										"description": "Site",
+										"disabled": true,
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
-													"title": "Cost of Coal Photo Essay",
-													"description": "Cost of Coal Photo Essay.",
+													"title": "The Cost of Coal Photo Essay",
+													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
 													"contentType": "image"
 												}
 											}
@@ -99,7 +100,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Wind Jobs Infographic",
-													"description": "Wind Jobs Infographic.",
+													"description": "The Club supports green energy technology, so when Speaker of the House, John Boehner threatened to turn down a bill that supports wind jobs, we decided to visually represent our progress and the jobs that were at stake.",
 													"contentType": "image"
 												}
 											}
@@ -109,13 +110,13 @@
 									"item": {
 										"fragment": "club-outings",
 										"title": "Sierra Club Outings",
-										"description": "Site",
+										"description": "Site and Identity",
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
 													"title": "Sierra Club Outings",
-													"description": "Sierra Club Outings.",
+													"description": "You may not know that Sierra Club has a travel department, but we're looking to change that. The Outings department needed a cleaner, more visual online experience. We provided them with a new look and feel and several recommendations for a more engaging user experience.",
 													"contentType": "image"
 												}
 											}
@@ -131,7 +132,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Logos",
-													"description": "Logos.",
+													"description": "",
 													"contentType": "image"
 												}
 											}
@@ -147,7 +148,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Welcome Center",
-													"description": "Welcome Center.",
+													"description": "The welcome center introduced new sponsors of the club to all of their different campaigns. The single page format utilized a fixed header so you could navigate through this overview of the club's many properties and benefits.",
 													"contentType": "image"
 												}
 											}
@@ -157,13 +158,13 @@
 									"item": {
 										"fragment": "extreme-masters",
 										"title": "Intel Extreme Masters",
-										"description": "Campaign",
+										"description": "Campaign and Identity",
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
 													"title": "Intel Extreme Masters",
-													"description": "Intel Extreme Masters.",
+													"description": "Intel hosts an Extreme Masters tournament that draws gamers for all four corners of the globe. This site was the hub for information, photos and stats for participants and fans. I also designed the booth posters, banner ads, monitor toppers and print pieces. ",
 													"contentType": "image"
 												}
 											}
@@ -179,7 +180,7 @@
 												"item": {
 													"fragment": "AvEXzYGkorc",
 													"title": "Replacing the Dinosaurs - YouTube Video",
-													"description": "Replacing the Dinosaurs - YouTube Video.",
+													"description": "You purchase a hybrid car and feel better about lessening your carbon footprint. You convince a business such as FedEx to purchase a whole fleet of green cars and you are changing the business landscape. This stopmotion animation was conceived and filmed within a week for the Green Fleets team.",
 													"contentType": "video"
 												}
 											}
@@ -189,13 +190,13 @@
 									"item": {
 										"fragment": "safe-sushi",
 										"title": "Safe Sushi",
-										"description": "Mobile App and Graphics",
+										"description": "Mobile App",
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
 													"title": "Safe Sushi",
-													"description": "Safe Sushi.",
+													"description": "Everything we consume has fuller disclosure thanks to the internet. Food such as sushi and tuna are no exception. This informative app displays mercury levels, sustainability ratings and serves as a menu in case you don't know that Tako means octopus. ",
 													"contentType": "image"
 												}
 											}
@@ -219,7 +220,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Gigsby",
-													"description": "Gigsby.",
+													"description": "Ever stopped at a pedestrian walk and noticed how bad the band flyers? I have. Gigsby = Craigslist + bands with no money + awesome handdrawn graphics.",
 													"contentType": "image"
 												}
 											}, {
@@ -242,7 +243,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Environmental Ryan Gosling",
-													"description": "Image 1.",
+													"description": "I started this tumblr with my fellow gosling fan, Heather. Hey Girl, just saving the world for you, one baby seal at a t ",
 													"contentType": "image"
 												}
 											}, {
@@ -265,7 +266,7 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Mittgomery Burns Stickers",
-													"description": "Stickers.",
+													"description": "Mitt Romney + Montgomery Burns. Easy.",
 													"contentType": "image"
 												}
 											}
@@ -275,13 +276,13 @@
 									"item": {
 										"fragment": "urban-explorations",
 										"title": "Urban Exploration",
-										"description": "Photographs",
+										"description": "Photographs ",
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
 													"title": "Urban Exploration",
-													"description": "Image 1.",
+													"description": "I have this hobby of jumping fences and photographing decrepit buildings before they get torn down. Photographs include an abandoned scout camp, a luxury hotel, a car parts factory and a veterans' hospital.",
 													"contentType": "image"
 												}
 											}, {
