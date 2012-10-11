@@ -22,19 +22,31 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
     // top: $topHeight + px;
     left: -($siteWidth / 2) + px;
     
-    #overlay-close-container {
+    #overlay-menu {
       position: inherit;
+      float: right;
       width: $siteWidth + px;
-      
-      a {
-        color: $colorWhite;
-        text-transform: uppercase;
+        
+      div {
         float: right;
-        padding: 10px 10px 0 10px;
-        height: $topHeight + px;
-        background: $colorTeal;
-      }
+        position: relative;
+        
+        a {
+          float: left;
+          position: relative;
+          color: $colorWhite;
+          text-transform: uppercase;
+          padding: 10px 10px 0 10px;
+          height: $topHeight + px;
+          background: $colorTeal;
+        }
+        
+        a:hover {
+          color: $colorYellow !important;
+        }
+      }      
     }
+
     
     #overlay-content {
       position: inherit;

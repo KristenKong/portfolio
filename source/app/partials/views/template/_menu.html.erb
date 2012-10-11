@@ -1,4 +1,4 @@
-<!-- header -->
+<!-- Begin Main -->
 <script id="header_menu_tmpl" type="text/html">
 	<ul>
 	{{#data}}
@@ -20,7 +20,8 @@
 <script id="header_menu_item_tmpl" type="text/html">
 	<h3><strong>{{title}}</strong></h3>
 </script>
-<!-- main -->
+<!-- End Header -->
+<!-- Begin Main -->
 <script id="main_work_tmpl" type="text/html">{{> main_grid_tmpl}}</script>
 <script id="main_fun_tmpl" type="text/html">{{> main_grid_tmpl}}</script>
 <script id="main_grid_tmpl" type="text/html">
@@ -41,7 +42,8 @@
 	{{/data}}
 	</ul>
 </script>
-<!-- overlay -->
+<!-- End Main -->
+<!-- Begin Overlay -->
 <script id="main_overlay_image_tmpl" type="text/html">
 	{{^videoId}}
 	<img src="images/{{route}}.jpg" alt="{{description}}" />
@@ -51,7 +53,13 @@
 	{{> main_title_tmpl}}
 </script>
 <script id="main_overlay_close_tmpl" type="text/html">
-	<a href="#{{parent.attributes.parent.attributes.route}}">Close</a>
+	<a href="#{{parent.attributes.parent.attributes.route}}">Close <span>☓</span></a>
+</script>
+<script id="main_overlay_next_tmpl" type="text/html">
+	<a href="#{{route}}">Next <span>→</span></a>
+</script>
+<script id="main_overlay_last_tmpl" type="text/html">
+	<a href="#{{route}}"><span>←</span> Last</a>
 </script>
 <script id="main_overlay_cover_tmpl" type="text/html">
 	<a href="#{{parent.attributes.parent.attributes.route}}"><div id="overlay-background"></div></a>
@@ -67,4 +75,6 @@
 	<h4><p>{{{title}}}</p></h4>
 	<h5><p>{{{description}}}</p></h5>
 </script>
-<!-- footer -->
+<!-- End Overlay -->
+<!-- Begin Overlay -->
+<!-- End Overlay -->
