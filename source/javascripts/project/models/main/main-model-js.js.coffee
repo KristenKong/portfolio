@@ -41,6 +41,7 @@ class _MODELS.MainModel extends _MODELS.BaseModel
     @
     
   getSection : -> _itemCollection.toJSON()
+  
   getSubpage : -> 
     activeSectionId = @get 'activeSectionId'
     if activeSectionId
@@ -49,6 +50,25 @@ class _MODELS.MainModel extends _MODELS.BaseModel
       return undefined
       
   getContent : -> 
+    activeSectionId = @get 'activeSectionId'
+    activeSubpageId = @get 'activeSubpageId'
+    if activeSectionId and activeSubpageId
+      return ( _getContentItems.call @, activeSectionId, activeSubpageId ).toJSON()
+    else 
+      return undefined
+      
+  getContentRange : (range = 3) -> 
+    activeContentId = @get 'activeContentId'
+    content = @getContent()
+    if content
+      return _.find content, (val, key) =>
+        @log val
+        @log key
+        val
+    else 
+      return undefined
+      
+  getContentLast : -> 
     activeSectionId = @get 'activeSectionId'
     activeSubpageId = @get 'activeSubpageId'
     if activeSectionId and activeSubpageId

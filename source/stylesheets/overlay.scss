@@ -36,6 +36,34 @@ $videoPlayerLeft: ($siteWidth - $videoPlayerWidth) / 2;
       }
     }
     
+    #overlay-next-container {
+      position: inherit;
+      width: $siteWidth + px;
+      
+      a {
+        color: $colorWhite;
+        text-transform: uppercase;
+        float: right;
+        padding: 10px 10px 0 10px;
+        height: $topHeight + px;
+        background: $colorTeal;
+      }
+    }
+    
+    #overlay-last-container {
+      position: inherit;
+      width: $siteWidth + px;
+      
+      a {
+        color: $colorWhite;
+        text-transform: uppercase;
+        float: right;
+        padding: 10px 10px 0 10px;
+        height: $topHeight + px;
+        background: $colorTeal;
+      }
+    }
+    
     #overlay-content {
       position: inherit;
       top: $topHeight + px;

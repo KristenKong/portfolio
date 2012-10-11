@@ -75,15 +75,15 @@
 									}
 								}, {
 									"item": {
-										"fragment": "cost-coal",
-										"title": "The Cost of Coal Photo Essay",
-										"description": "Site",
+										"fragment": "levis-campaign",
+										"title": "Levis Campaign Pitch",
+										"description": "Pitch",
 										"disabled": true,
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
-													"title": "The Cost of Coal Photo Essay",
+													"title": "Levis Campaign Pitch",
 													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
 													"contentType": "image"
 												}

@@ -20,22 +20,30 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     
     $_videoContainer = $ '#overlay-video-container'
     $_imageContainer = $ '#overlay-image-container'
-    $_textContainer = $ '#overlay-text-container'
     $_coverContainer = $ '#overlay-cover-container'
     $_closeContainer = $ '#overlay-close-container'
-    
+    $_textContainer = $ '#overlay-text-container'
     
     _mainModel = _MODELS.mainModel
     _mainModel.on 'change:activeSubpageId', (model) =>
-      @log 'A Subpage has changed - update view.'
+      @log 'Subpage has changed - update view.'
       
       data = _mainModel.getContent()
       
+      @log data
+      
       if data
-        @render data[ 0 ]
+        route = data[ 0 ][ 'route' ]
+        @ROUTER.navigate route, { trigger: true }
       else
         _videoPlayer.stopVideo()
         @$el.hide()
+        
+    _mainModel.on 'change:activeContentId', (model) =>
+      @log 'Content has changed - update view.'
+      
+      data = _mainModel.getContent()
+      @render data
         
       @
       
@@ -52,8 +60,15 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     
     activeSectionId = _mainModel.get 'activeSectionId'
     activeSubpageId = _mainModel.get 'activeSubpageId'
+    activeContentId = _mainModel.get 'activeContentId'
     
     @log "render : '#{activeSectionId}' : '#{activeSubpageId}'"
+    
+    data = data[ 0 ]
+    
+    range = _mainModel.getContentRange 3
+    
+    @log 'range', range
     
     if data.videoId
       $_imageContainer.hide()

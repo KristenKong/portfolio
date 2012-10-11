@@ -38,7 +38,7 @@ class _VIEWS.MainView extends _VIEWS.BaseView
     
     _mainModel = _MODELS.mainModel
     _mainModel.on 'change:activeSectionId', (model) =>
-      @log 'A Section has changed - update view.'
+      @log 'Section has changed - update view.'
       @render()
       @show 250, 125
     
