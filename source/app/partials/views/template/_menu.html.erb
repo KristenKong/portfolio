@@ -53,13 +53,13 @@
 	{{> main_title_tmpl}}
 </script>
 <script id="main_overlay_close_tmpl" type="text/html">
-	<a href="#{{parent.attributes.parent.attributes.route}}">Close</a>
+	<a href="#{{parent.attributes.parent.attributes.route}}">Close <span>☓</span></a>
 </script>
 <script id="main_overlay_next_tmpl" type="text/html">
-	<a href="#{{item.route}}">Next <span>▶</span></a>
+	<a href="#{{route}}">Next <span>→</span></a>
 </script>
 <script id="main_overlay_last_tmpl" type="text/html">
-	<a href="#{{item.route}}"><span>◀</span> Last</a>
+	<a href="#{{route}}"><span>←</span> Last</a>
 </script>
 <script id="main_overlay_cover_tmpl" type="text/html">
 	<a href="#{{parent.attributes.parent.attributes.route}}"><div id="overlay-background"></div></a>

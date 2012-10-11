@@ -38,6 +38,20 @@
 													"description": "The Club endorsed upwards of 1000 candidates this voting season and we wanted voters to be able to make informed decisions on the best candidates for the environment. Since the site is responsive, it would be easy to access in the voting booth. This was picked up by <a href=\"http://redgreenandblue.org/2010/10/27/top-green-voter-guides\"> Red Green and Blue. </a>",
 													"contentType": "image"
 												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Sierra Club Voter Guide",
+													"description": "The Club endorsed upwards of 1000 candidates this voting season and we wanted voters to be able to make informed decisions on the best candidates for the environment. Since the site is responsive, it would be easy to access in the voting booth. This was picked up by <a href=\"http://redgreenandblue.org/2010/10/27/top-green-voter-guides\"> Red Green and Blue. </a>",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Sierra Club Voter Guide",
+													"description": "The Club endorsed upwards of 1000 candidates this voting season and we wanted voters to be able to make informed decisions on the best candidates for the environment. Since the site is responsive, it would be easy to access in the voting booth. This was picked up by <a href=\"http://redgreenandblue.org/2010/10/27/top-green-voter-guides\"> Red Green and Blue. </a>",
+													"contentType": "image"
+												}
 											}
 										]
 									}
@@ -50,6 +64,20 @@
 											{
 												"item": {
 													"fragment": "image-1",
+													"title": "Best Buy Christmas",
+													"description": "For this pitch, our team created a microsite with several interactive components including a gift list builder, a snowglobe game and sitting on Santa's lap photo app.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Best Buy Christmas",
+													"description": "For this pitch, our team created a microsite with several interactive components including a gift list builder, a snowglobe game and sitting on Santa's lap photo app.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
 													"title": "Best Buy Christmas",
 													"description": "For this pitch, our team created a microsite with several interactive components including a gift list builder, a snowglobe game and sitting on Santa's lap photo app.",
 													"contentType": "image"
@@ -78,11 +106,31 @@
 										"fragment": "levis-campaign",
 										"title": "Levis Campaign Pitch",
 										"description": "Pitch",
-										"disabled": true,
 										"items": [
 											{
 												"item": {
 													"fragment": "image-1",
+													"title": "Levis Campaign Pitch",
+													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Levis Campaign Pitch",
+													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Levis Campaign Pitch",
+													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-4",
 													"title": "Levis Campaign Pitch",
 													"description": "This photojournalistic site was a collaboration with the SIERRA magazine team and showcased their essays about the victims of mountaintop removal coal mining, coal burning and exporting.",
 													"contentType": "image"
@@ -119,6 +167,27 @@
 													"description": "You may not know that Sierra Club has a travel department, but we're looking to change that. The Outings department needed a cleaner, more visual online experience. We provided them with a new look and feel and several recommendations for a more engaging user experience.",
 													"contentType": "image"
 												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Sierra Club Outings",
+													"description": "You may not know that Sierra Club has a travel department, but we're looking to change that. The Outings department needed a cleaner, more visual online experience. We provided them with a new look and feel and several recommendations for a more engaging user experience.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Sierra Club Outings",
+													"description": "You may not know that Sierra Club has a travel department, but we're looking to change that. The Outings department needed a cleaner, more visual online experience. We provided them with a new look and feel and several recommendations for a more engaging user experience.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-4",
+													"title": "Sierra Club Outings",
+													"description": "You may not know that Sierra Club has a travel department, but we're looking to change that. The Outings department needed a cleaner, more visual online experience. We provided them with a new look and feel and several recommendations for a more engaging user experience.",
+													"contentType": "image"
+												}
 											}
 										]
 									}
@@ -131,6 +200,34 @@
 											{
 												"item": {
 													"fragment": "image-1",
+													"title": "Logos",
+													"description": "",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Logos",
+													"description": "",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Logos",
+													"description": "",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-4",
+													"title": "Logos",
+													"description": "",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-5",
 													"title": "Logos",
 													"description": "",
 													"contentType": "image"
@@ -151,6 +248,20 @@
 													"description": "The welcome center introduced new sponsors of the club to all of their different campaigns. The single page format utilized a fixed header so you could navigate through this overview of the club's many properties and benefits.",
 													"contentType": "image"
 												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Welcome Center",
+													"description": "The welcome center introduced new sponsors of the club to all of their different campaigns. The single page format utilized a fixed header so you could navigate through this overview of the club's many properties and benefits.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Welcome Center",
+													"description": "The welcome center introduced new sponsors of the club to all of their different campaigns. The single page format utilized a fixed header so you could navigate through this overview of the club's many properties and benefits.",
+													"contentType": "image"
+												}
 											}
 										]
 									}
@@ -163,6 +274,27 @@
 											{
 												"item": {
 													"fragment": "image-1",
+													"title": "Intel Extreme Masters",
+													"description": "Intel hosts an Extreme Masters tournament that draws gamers for all four corners of the globe. This site was the hub for information, photos and stats for participants and fans. I also designed the booth posters, banner ads, monitor toppers and print pieces. ",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Intel Extreme Masters",
+													"description": "Intel hosts an Extreme Masters tournament that draws gamers for all four corners of the globe. This site was the hub for information, photos and stats for participants and fans. I also designed the booth posters, banner ads, monitor toppers and print pieces. ",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Intel Extreme Masters",
+													"description": "Intel hosts an Extreme Masters tournament that draws gamers for all four corners of the globe. This site was the hub for information, photos and stats for participants and fans. I also designed the booth posters, banner ads, monitor toppers and print pieces. ",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-4",
 													"title": "Intel Extreme Masters",
 													"description": "Intel hosts an Extreme Masters tournament that draws gamers for all four corners of the globe. This site was the hub for information, photos and stats for participants and fans. I also designed the booth posters, banner ads, monitor toppers and print pieces. ",
 													"contentType": "image"
@@ -199,6 +331,13 @@
 													"description": "Everything we consume has fuller disclosure thanks to the internet. Food such as sushi and tuna are no exception. This informative app displays mercury levels, sustainability ratings and serves as a menu in case you don't know that Tako means octopus. ",
 													"contentType": "image"
 												}
+											}, {
+												"item": {
+													"fragment": "image-2",
+													"title": "Safe Sushi",
+													"description": "Everything we consume has fuller disclosure thanks to the internet. Food such as sushi and tuna are no exception. This informative app displays mercury levels, sustainability ratings and serves as a menu in case you don't know that Tako means octopus. ",
+													"contentType": "image"
+												}
 											}
 										]
 									}
@@ -227,7 +366,7 @@
 												"item": {
 													"fragment": "image-2",
 													"title": "Gigsby",
-													"description": "Gigsby.",
+													"description": "Ever stopped at a pedestrian walk and noticed how bad the band flyers? I have. Gigsby = Craigslist + bands with no money + awesome handdrawn graphics.",
 													"contentType": "image"
 												}
 											}
@@ -243,14 +382,21 @@
 												"item": {
 													"fragment": "image-1",
 													"title": "Environmental Ryan Gosling",
-													"description": "I started this tumblr with my fellow gosling fan, Heather. Hey Girl, just saving the world for you, one baby seal at a t ",
+													"description": "I started this tumblr with my fellow gosling fan, Heather. Hey Girl, just saving the world for you, one baby seal at a time.",
 													"contentType": "image"
 												}
 											}, {
 												"item": {
 													"fragment": "image-2",
 													"title": "Environmental Ryan Gosling",
-													"description": "Image 2.",
+													"description": "I started this tumblr with my fellow gosling fan, Heather. Hey Girl, just saving the world for you, one baby seal at a time.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Environmental Ryan Gosling",
+													"description": "I started this tumblr with my fellow gosling fan, Heather. Hey Girl, just saving the world for you, one baby seal at a time.",
 													"contentType": "image"
 												}
 											}
@@ -265,6 +411,13 @@
 											{
 												"item": {
 													"fragment": "image-1",
+													"title": "Mittgomery Burns Stickers",
+													"description": "Mitt Romney + Montgomery Burns. Easy.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-2",
 													"title": "Mittgomery Burns Stickers",
 													"description": "Mitt Romney + Montgomery Burns. Easy.",
 													"contentType": "image"
@@ -289,7 +442,28 @@
 												"item": {
 													"fragment": "image-2",
 													"title": "Urban Exploration",
-													"description": "Image 2.",
+													"description": "I have this hobby of jumping fences and photographing decrepit buildings before they get torn down. Photographs include an abandoned scout camp, a luxury hotel, a car parts factory and a veterans' hospital.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-3",
+													"title": "Urban Exploration",
+													"description": "I have this hobby of jumping fences and photographing decrepit buildings before they get torn down. Photographs include an abandoned scout camp, a luxury hotel, a car parts factory and a veterans' hospital.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-4",
+													"title": "Urban Exploration",
+													"description": "I have this hobby of jumping fences and photographing decrepit buildings before they get torn down. Photographs include an abandoned scout camp, a luxury hotel, a car parts factory and a veterans' hospital.",
+													"contentType": "image"
+												}
+											}, {
+												"item": {
+													"fragment": "image-5",
+													"title": "Urban Exploration",
+													"description": "I have this hobby of jumping fences and photographing decrepit buildings before they get torn down. Photographs include an abandoned scout camp, a luxury hotel, a car parts factory and a veterans' hospital.",
 													"contentType": "image"
 												}
 											}

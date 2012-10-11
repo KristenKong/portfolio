@@ -7,9 +7,11 @@ _videoPlayer = undefined
 
 $_videoContainer = undefined
 $_imageContainer = undefined
-$_textContainer = undefined
 $_coverContainer = undefined
 $_closeContainer = undefined
+$_nextContainer = undefined
+$_lastContainer = undefined
+$_textContainer = undefined
 
 class _VIEWS.OverlayView extends _VIEWS.BaseView
 
@@ -22,30 +24,21 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     $_imageContainer = $ '#overlay-image-container'
     $_coverContainer = $ '#overlay-cover-container'
     $_closeContainer = $ '#overlay-close-container'
+    $_nextContainer = $ '#overlay-next-container'
+    $_lastContainer = $ '#overlay-last-container'
     $_textContainer = $ '#overlay-text-container'
     
     _mainModel = _MODELS.mainModel
-    _mainModel.on 'change:activeSubpageId', (model) =>
-      @log 'Subpage has changed - update view.'
+    _mainModel.on 'change:activeFragments', (model) =>
+      @log 'Fragments has changed - update view.'
       
       data = _mainModel.getContent()
       
-      @log data
-      
       if data
-        route = data[ 0 ][ 'route' ]
-        @ROUTER.navigate route, { trigger: true }
+        @render data
       else
         _videoPlayer.stopVideo()
         @$el.hide()
-        
-    _mainModel.on 'change:activeContentId', (model) =>
-      @log 'Content has changed - update view.'
-      
-      data = _mainModel.getContent()
-      @render data
-        
-      @
       
     _videoPlayer = new _VIEWS.VideoPlayer()
     _videoPlayer.init undefined, =>
@@ -62,13 +55,20 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     activeSubpageId = _mainModel.get 'activeSubpageId'
     activeContentId = _mainModel.get 'activeContentId'
     
+    if activeContentId is undefined
+      route = data[ 0 ][ 'route' ]
+      @ROUTER.navigate route, { trigger: true }
+      return
+    
     @log "render : '#{activeSectionId}' : '#{activeSubpageId}'"
     
-    data = data[ 0 ]
+    range = _mainModel.getContentRange()
     
-    range = _mainModel.getContentRange 3
+    last = range.last
+    data = range.active
+    next = range.next
     
-    @log 'range', range
+    # @log 'range', range
     
     if data.videoId
       $_imageContainer.hide()
@@ -87,7 +87,19 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     $_coverContainer.html html                                                                                                                    
     
     html = ich.main_overlay_close_tmpl data
-    $_closeContainer.html html                                                                                                                    
+    $_closeContainer.html html
+    
+    if last                                                                                                              
+      html = ich.main_overlay_last_tmpl last
+    else
+      html = ''
+    $_lastContainer.html html                                                                                                              
+    
+    if next                                                                                                              
+      html = ich.main_overlay_next_tmpl next
+    else
+      html = ''
+    $_nextContainer.html html                                                                                                                    
     
     @$el.fadeIn 250
     
