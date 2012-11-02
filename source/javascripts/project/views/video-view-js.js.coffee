@@ -16,7 +16,7 @@ class _VIEWS.VideoPlayer
     
     playerProps.width = "100%"
     playerProps.height = "100%"
-    playerProps.autoplay = false
+    playerProps.autoplay = true
     
     playerProps.onReady = =>
       _log "Video Player is ready"
