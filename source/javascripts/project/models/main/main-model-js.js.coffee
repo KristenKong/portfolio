@@ -19,6 +19,7 @@ _getDomIds = (ids) ->
 class _MODELS.MainModel extends _MODELS.BaseModel
   
   className : 'MainModel'
+  activeFragments : []
   activeSectionId : undefined
   activeSubpageId : undefined
   activeContentId : undefined
@@ -41,6 +42,7 @@ class _MODELS.MainModel extends _MODELS.BaseModel
     @
     
   getSection : -> _itemCollection.toJSON()
+  
   getSubpage : -> 
     activeSectionId = @get 'activeSectionId'
     if activeSectionId
@@ -49,6 +51,40 @@ class _MODELS.MainModel extends _MODELS.BaseModel
       return undefined
       
   getContent : -> 
+    activeSectionId = @get 'activeSectionId'
+    activeSubpageId = @get 'activeSubpageId'
+    if activeSectionId and activeSubpageId
+      return ( _getContentItems.call @, activeSectionId, activeSubpageId ).toJSON()
+    else 
+      return undefined
+      
+  getContentRange : -> 
+    activeContentId = @get 'activeContentId'
+    content = @getContent()
+    activeIndex = undefined
+      
+    if content
+      _.find content, (val, key) =>
+        # @log 'val', val
+        # @log 'key', key
+        activeIndex = key
+        val[ 'fragment' ] == activeContentId
+      
+      lastIndex = if activeIndex - 1 isnt -1 then activeIndex - 1 else content.length - 1
+      nextIndex = if activeIndex + 1 isnt content.length then activeIndex + 1 else 0
+       
+      # @log 'activeIndex', activeIndex
+      # @log 'lastIndex', lastIndex
+      # @log 'nextIndex', nextIndex
+      
+      items =
+        active : content[ activeIndex ]
+        last : if lastIndex isnt nextIndex then content[ lastIndex ] else undefined
+        next : if nextIndex isnt activeIndex then content[ nextIndex ] else undefined
+    else 
+      return undefined
+      
+  getContentLast : -> 
     activeSectionId = @get 'activeSectionId'
     activeSubpageId = @get 'activeSubpageId'
     if activeSectionId and activeSubpageId

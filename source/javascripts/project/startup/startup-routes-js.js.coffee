@@ -9,6 +9,7 @@ _updateMainModel = (activeSectionId, activeSubpageId = undefined, activeContentI
   _mainModel.set 'activeSectionId', activeSectionId
   _mainModel.set 'activeSubpageId', activeSubpageId
   _mainModel.set 'activeContentId', activeContentId
+  _mainModel.set 'activeFragments', [ activeSectionId, activeSubpageId, activeContentId ]
 
 _init = (callback) ->
   

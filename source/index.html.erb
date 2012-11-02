@@ -1,15 +1,12 @@
 <% content_for :head do %> 
 	<title><%= data.config.site.title %></title>
 	<meta charset="utf-8">
-	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 	<link rel="canonical" href="<%= get_site_url %>">
 	<meta name="description" content="<%= data.config.site.description %>">
 	<meta name="keywords" content="project, boilerplate">
-	<%= partial "app/partials/social/og-tags" %>
-	<%= partial "app/partials/util/mobile-redirect" %>
 	<%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Petit+Formal+Script|Josefin+Slab:300,400" %>
 	<%= stylesheet_link_tag "site.css" %>
 	<!--[if IE]>
