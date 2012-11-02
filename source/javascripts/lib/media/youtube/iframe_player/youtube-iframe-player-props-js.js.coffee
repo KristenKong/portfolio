@@ -6,11 +6,11 @@ _ob.Props = ->
   @playerTargetId = "video-player-target"
   @width = "645"
   @height = "390"
-  @autoplay = 0
-  @controls = 1
-  @autohide = 1
-  @showinfo = 0
-  @related = 0
+  @autoplay = false
+  @controls = true
+  @autohide = true
+  @showinfo = false
+  @rel = 0
   # Event handlers
   @onReady = undefined
   @onError = undefined
