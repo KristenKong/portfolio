@@ -70,10 +70,10 @@ class _VIEWS.OverlayView extends _VIEWS.BaseView
     
     # @log 'range', range
     
-    if data.videoId
+    if data.contentType is 'video'
       $_imageContainer.hide()
       $_videoContainer.show()
-      _videoPlayer.loadVideoById data.videoId
+      _videoPlayer.loadVideoById data.fragment
     else
       html = ich.main_overlay_image_tmpl data
       $_imageContainer.html html

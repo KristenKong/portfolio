@@ -40,3 +40,11 @@ _ob.PlaybackProgress = ->
   @PERCENT_25 = "percent_25"
   
   @
+  
+_ob.EventTypes = ->
+  
+  @VIDEO_START = "video_start"
+  @VIDEO_PROGRESS = "video_progress"
+  @VIDEO_STOP = "video_stop"
+  
+  @

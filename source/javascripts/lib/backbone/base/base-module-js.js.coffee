@@ -1,6 +1,7 @@
 _NS = @__get_project_namespace__()
 _MODULES = @__get_project_namespace__ [ "Modules" ]
 _MODELS = @__get_project_namespace__ [ "Models" ]
+_VIEWS = @__get_project_namespace__ [ "Views" ]
 
 _setup = ->
   @ROUTER = _NS.navigationRouter
@@ -20,13 +21,11 @@ class _MODULES.BaseModule
   className : "BaseModule"
   NS : _NS
   MODELS : _MODELS
-  ROUTER : undefined
-  EVENTBUS : undefined
   
-  constructor : ->
+  initialize : ->
     
     @log = _NS.log @className
-    # @log "constructor"
+    # @log "initialize"
     
     _setup.call @
     _init.call @

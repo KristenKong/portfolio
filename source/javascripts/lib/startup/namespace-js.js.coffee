@@ -1,4 +1,4 @@
-_NS = ( @DEFAULT_NAMESPACE_OBJECT = {} )
+_NS = ( @__NAMESPACED_OBJECT__ = {} )
 
 @__get_project_namespace__ = (namespaces = []) -> 
   ns = _NS
@@ -9,10 +9,15 @@ _NS = ( @DEFAULT_NAMESPACE_OBJECT = {} )
   
 @__set_project_namespace__ = (namespaces = []) ->
   if namespaces.length isnt 0
+    ns = {}
+    _.each _NS, ( key, val ) -> ns[key] = val
+
     _NS = @
     _NS = @__get_project_namespace__ namespaces
+
+    _.each ns, ( key, val ) -> _NS[key] = val
     
-    # delete @DEFAULT_NAMESPACE_OBJECT
-    @DEFAULT_NAMESPACE_OBJECT = undefined
+    # delete @__NAMESPACED_OBJECT__
+    @__NAMESPACED_OBJECT__ = undefined
     
   _NS

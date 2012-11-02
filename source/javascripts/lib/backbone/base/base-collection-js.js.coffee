@@ -15,8 +15,7 @@ class _MODELS.BaseCollection extends Backbone.Collection
   className : "BaseCollection"
   NS : _NS
   MODELS : _MODELS
-  ROUTER : undefined
-  EVENTBUS : undefined
+  model : _MODELS.BaseModel
   
   initialize : ->
     @log = _NS.log @className

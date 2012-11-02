@@ -23,14 +23,14 @@ _player = undefined
 _videoId = undefined
 
 # Flags
+_isReady = false
 _isLoading = false
 _isPaused = false
 
-_log = ->
-    
-  # @log "[YT.IFramePlayer]", arg for arg in arguments
-  
-  @
+_readyChecks = 60
+_readyChecker = undefined
+
+_log = _NS.log 'YT IFramePlayer'
 
 _loadAPI = ->
   tag = _doc.createElement 'script'
@@ -40,7 +40,8 @@ _loadAPI = ->
   @
 
 _updateVideo = (videoId, autoplay = undefined) ->
-  # _log 'update video ====== ', videoId
+  _log 'Update Video ', videoId
+  
   _videoId = videoId
   
   if autoplay is true or autoplay is false
@@ -48,7 +49,7 @@ _updateVideo = (videoId, autoplay = undefined) ->
     
   if _player isnt undefined
     _isLoading = true
-    _player.loadVideoById _videoId
+    _player.loadVideoById _videoId, autoplay
     
   @
 
@@ -86,20 +87,22 @@ _trackLoadingProgress = ->
   @
 
 _onYouTubePlayerAPIReady = ->
-  _log "API ready"
+  _log 'API ready'
   
   _win.onYouTubePlayerAPIReady = null
   
-  related = 
+  _log '_playerProps_playerProps_playerProps_playerProps', _playerProps
 
   params =
     playerVars :
       enablejsapi : 1
-      autoplay : _playerProps.autoplay
-      controls : _playerProps.controls
-      autohide : _playerProps.autohide
-      showinfo : _playerProps.showinfo
-      related : _playerProps.related + "&wmode=transparent"
+      autoplay : if _playerProps.autoplay is true then 1 else 0
+      controls : if _playerProps.controls is true then 1 else 0
+      autohide : if _playerProps.autohide is true then 1 else 0
+      showinfo : if _playerProps.showinfo is true then 1 else 0
+      rel : _playerProps.rel + "&wmode=transparent"
+      wmode: "opaque"
+
       
     width : _playerProps.width
     height : _playerProps.height
@@ -116,14 +119,50 @@ _onYouTubePlayerAPIReady = ->
   # TODO: RKP: Detect 500, 404 on timer?
   _player = new YT.Player _playerProps.playerTargetId, params
   
+    
+  _readyChecker = setInterval (=>
+    
+    _log 'Check ready'
+    
+    el = $("#{_playerProps.playerTargetId}").is("iframe")
+    
+    
+    # _log "Element : #{el}"
+    # _log "Ready Checks : #{_readyChecks}"
+    # _log "Is Ready? : #{_isReady}"
+    # _log "_player.loadVideoById : #{_player.loadVideoById}"
+  
+    if ( el and _player.loadVideoById ) or _isReady or _readyChecks-- is 0
+      _log 'Is ready'
+      _readySuccess()
+    else
+      _log 'Not ready'
+    )
+    , 50
+  
   @
-
-_onReady = (event) ->
-  _log 'Player ready', event
+  
+_readySuccess = ->
+  
+  _log 'Ready success'
+  
+  if _isReady then return  
+      
+  _isReady = true
+  
+  clearInterval _readyChecker
 
   if _playerProps?.onLoadProgress isnt undefined then _trackLoadingProgress()
 
   _playerProps.onReady?.call null
+  
+  @
+
+_onReady = (event) ->
+  
+  _log 'Player ready event'
+  
+  _readySuccess()
   
   @
 
@@ -205,10 +244,10 @@ _progress = 0
 _progressMilestone25 = false
 _progressMilestone50 = false
 _progressMilestone75 = false
+_progressMilestone100 = false
 _timerCount = 0
   
 _startProgressTimer = ->
-  # @log "...................start timer"
   _stopProgressTimer()
   _timerCount =0
   if _timer is undefined
@@ -227,15 +266,19 @@ _checkProgressMilestone = ->
   if _progress > .25 and _progress < .5 and _progressMilestone25 is false
     _progressMilestone25 = true
     _progressMilestone50 = _progressMilestone75 = false
-    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_25
+    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_25, _progress
   else if _progress > .5 and _progress < .75 and _progressMilestone50 is false
     _progressMilestone50 = true
     _progressMilestone25 = _progressMilestone75 = false
-    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_50
-  else if _progress > .75 and _progress < 1 and _progressMilestone75 is false
+    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_50, _progress
+  else if _progress > .75 and _progress < .98 and _progressMilestone75 is false
     _progressMilestone75 = true
     _progressMilestone25 = _progressMilestone50 = false
-    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_75
+    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_75, _progress
+  else if _progress > .98 and _progress <= 1 and _progressMilestone100 is false
+    _progressMilestone100 = true
+    _progressMilestone25 = _progressMilestone50 = _progressMilestone75 = false
+    _playerProps.onPlaybackProgress?.call null, _playbackProgress.PERCENT_100, _progress
     
   
 _stopProgressTimer = ->
@@ -243,12 +286,15 @@ _stopProgressTimer = ->
   _progressMilestone25 = false
   _progressMilestone50 = false
   _progressMilestone75 = false
+  _progressMilestone100 = false
   if _timer
     clearInterval _timer
   _timer = undefined
   
 # Public methods
 _ob.init = (playerProps) ->
+  
+  _log 'init'
   
   _playerProps = playerProps or new _ob.Initializer
   

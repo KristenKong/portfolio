@@ -11,13 +11,13 @@ _loadData = (callback) ->
     
     _log "[ Main data loaded ]"
     
-    eventType = _NS.eventBus.eventTypes.MODEL_READY
-    data = response['root']['item_data']
+    properties = response['root']['item_data']
     
-    _MODELS.mainModel = new _MODELS.MainModel data
-    _MODELS.mainModel.on eventType, => 
+    new _MODELS.MainModel properties, ->
     
       _log "[ Main data modeled ]"
+
+      _MODELS.mainModel = @
       
       callback()
     

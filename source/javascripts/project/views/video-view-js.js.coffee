@@ -16,7 +16,7 @@ class _VIEWS.VideoPlayer
     
     playerProps.width = "100%"
     playerProps.height = "100%"
-    playerProps.autoplay = false
+    playerProps.autoplay = true
     
     playerProps.onReady = =>
       _log "Video Player is ready"
@@ -28,8 +28,7 @@ class _VIEWS.VideoPlayer
       if _videoId isnt undefined
         _log "player is ready, loading video #{_videoId}"
         
-        # Queued videoId must be the 1st video, don't autoplay
-        @loadVideoById _videoId, false
+        @loadVideoById _videoId
         
         _videoId = undefined
       
@@ -62,13 +61,13 @@ class _VIEWS.VideoPlayer
       
     @
   
-  loadVideoById : (videoId, autoplay = true) ->
+  loadVideoById : (videoId) ->
     _log "Load video by id : #{videoId}"
     
     # TODO : [RKP] : Move this inside player logic
     if _isPlayerReady
       _log "Load video by id, player is ready"
-      _player.loadVideoById videoId, autoplay
+      _player.loadVideoById videoId
       
     else
       # Player isn't ready so we'll store the videoId for when it is
