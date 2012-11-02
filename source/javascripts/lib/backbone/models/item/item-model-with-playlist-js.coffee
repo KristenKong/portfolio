@@ -19,9 +19,9 @@ _checkVideo = ->
     @set 'videoId', ( @get 'fragment' )
   @
 
-class _MODELS.ItemModel extends _MODELS.BaseModel
+class _MODELS.PageModelWithPlaylist extends _MODELS.BaseModel
 
-  className : "ItemModel"
+  className : "PageModelWithPlaylist"
   addProperties : ->
     super
     

@@ -1,22 +1,22 @@
 _NS = @__get_project_namespace__()
 _MODELS = @__get_project_namespace__ [ "Models" ]
 
-_itemCollection = undefined
+_collection = undefined
 
 _getSubpageItems = (activeSectionId) ->
-  model = _itemCollection.find (model) -> ( model.get 'fragment' ) is activeSectionId
-  model.get 'itemCollection'
+  model = _collection.find (model) -> ( model.get 'fragment' ) is activeSectionId
+  model.get 'collection'
 
 _getContentItems = (activeSectionId, activeSubpageId) ->
   model = ( _getSubpageItems.call @, activeSectionId ).find (model) -> ( model.get 'fragment' ) is activeSubpageId
-  model.get 'itemCollection'
+  model.get 'collection'
   
 _getDomIds = (ids) ->
   _ids = []
   _.each ids, (id) => _ids.push ( @get id )
   _ids.join '-'
 
-class _MODELS.MainModel extends _MODELS.BaseModel
+class _MODELS.MainModel extends _MODELS.ItemModel
   
   className : 'MainModel'
   activeFragments : []
@@ -24,12 +24,14 @@ class _MODELS.MainModel extends _MODELS.BaseModel
   activeSubpageId : undefined
   activeContentId : undefined
   
-  initialize : (data) ->
-    super data
+  initialize : (data, @onReady) ->
+    super data, @onReady
+
+    @log 'init'
     
-    _itemCollection = @get 'itemCollection'
+    _collection = @get 'collection'
     
-    @log _itemCollection
+    @log _collection
     
     @
   
@@ -38,10 +40,10 @@ class _MODELS.MainModel extends _MODELS.BaseModel
     @attributes['activeContentId'] = undefined
     @attributes['activeSubpageId'] = undefined
     # Update
-    @set 'activeSectionId', ( _itemCollection.at 0 ).get 'fragment'
+    @set 'activeSectionId', ( _collection.at 0 ).get 'fragment'
     @
     
-  getSection : -> _itemCollection.toJSON()
+  getSection : -> _collection.toJSON()
   
   getSubpage : -> 
     activeSectionId = @get 'activeSectionId'
